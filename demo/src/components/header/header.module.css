@@ -1,0 +1,31 @@
+header {
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: row;
+    height: fit-content;
+    padding: 2%;
+}
+
+header > .left-side {
+    display: flex;
+    flex: 0 1 auto;
+    width: 50%;
+    height: fit-content;
+    gap: 3%;
+}
+
+header > .right-side {
+    display: flex;
+    flex: 0 1 auto;
+    width: 50%;
+    height: fit-content;
+    justify-content: end;
+}
+
+header img {
+    flex: 0 1 auto;
+    width: auto;
+    height: 4.2em;
+    border-radius: 15px;
+    border: 2px solid black;
+}

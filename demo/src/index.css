@@ -1,0 +1,10 @@
+/**GENERIC**/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 1.75em;
+}

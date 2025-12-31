@@ -1,0 +1,29 @@
+.item-container {
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: column; 
+    width: 25%;
+    height: 100;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px 5px 0 5px;
+    box-shadow: 1px 2px 2px rgb(61, 61, 61);
+    cursor: pointer;
+}
+    .item-container img {
+        flex: 1;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+    .item-container h1 {
+        flex: 1;
+        font-size: 1.25em;
+    }
+    .item-container p {
+        flex: 1;
+        text-align: center;
+        font-size: 0.8em;
+        margin: 2.5% 0%;
+    }

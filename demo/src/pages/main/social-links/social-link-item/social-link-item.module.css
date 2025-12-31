@@ -1,0 +1,8 @@
+.social-link {
+    display: flex;
+    flex: 0 1 auto;
+    width: 3.15em;
+    height: 3.15em;
+    box-shadow: 4px 4px 5px rgb(193, 193, 193);
+    cursor: pointer;
+}

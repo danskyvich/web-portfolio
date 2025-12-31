@@ -1,0 +1,30 @@
+.footer {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    height: fit-content;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+    .footer p {
+        text-align: center;
+        margin: 2% 0 0 0;
+        font-size: 0.8em;
+        font-weight: 600;
+    }
+    .footer a {
+        width: 15em;
+        height: fit-content;
+        border: 2px solid white;
+        padding: 0.25%;
+        border-radius: 10px;
+        background-color: black;
+        color: white;
+        margin: 1% 0 2% 0;
+    }
+    .footer a:hover {
+        background-color: white;
+        color: black;
+    }

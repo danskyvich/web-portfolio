@@ -1,0 +1,50 @@
+/*Page-specific*/
+.container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100vh;
+}
+  .featured-works {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    background-color: #434E78;
+    color: white;
+  }
+  .other-works {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+  }
+  .misc-works {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    background-color: #607B8F;
+    color: white;
+  }
+
+.featured-works h1, .other-works h1, .misc-works h1 {
+  margin: 2% 1% 0 1%;
+  align-self: start;
+}
+
+.horizontal-grid {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  gap: 20px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 2%;
+}
+.vertical-grid {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 20px;
+  margin: 2%;
+}
+
+

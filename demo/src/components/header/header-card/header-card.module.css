@@ -1,0 +1,22 @@
+/*Header card decoration */
+header a {
+    display: flex;
+    flex: 0 1 auto;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 1em;
+    width: 8em;
+    height: 2em;
+    color: black;
+    font-weight: 600;
+    /*Centering words*/
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 3px gray;
+    cursor: pointer;
+}
+
+/*Header state decoration*/
+a:link, a:hover, a:active, a::after {
+    text-decoration: none;
+}

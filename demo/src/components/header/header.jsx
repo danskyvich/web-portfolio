@@ -6,15 +6,15 @@ export default function Header() {
             <div className={styles['left-side']}>
             <img src="/favicon.svg" />
             <HeaderCard
-                url={"/"}
+                link={"/#works1"}
                 text={"Featured"}
             />
             <HeaderCard
-                url={"/"}
+                link={"/#works2"}
                 text={"Works"}
             />
             <HeaderCard
-                url={""}
+                link={"/about-me"}
                 text={"About me"} />
         </div>
         <div className={styles['right-side']}>

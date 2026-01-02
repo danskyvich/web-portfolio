@@ -17,6 +17,6 @@ header a {
 }
 
 /*Header state decoration*/
-a:link, a:hover, a:active, a::after {
+button:link, button:hover, button:active, button::after {
     text-decoration: none;
 }

@@ -1,19 +1,20 @@
 import "./index.css"
+import styles from "index.css"
 import Header from "components/header/header.jsx"
-import SelfPicCard from "pages/main/self-pic-card/self-pic-card.jsx"
-import SocialLinks from "pages/main/social-links/social-links.jsx"
-import ItemCard from "pages/main/item-card-vertical/item-card.jsx"
-import HorizontalCard from "pages/main/item-card-horizontal/horizontal-card.jsx"
-import Footer from "components/footer/footer.jsx"
+import SelfPicCard from "pages/main/self-pic-card/self-pic-card"
+import SocialLinks from "pages/main/social-links/social-links"
+import ItemCard from "pages/main/item-card-vertical/item-card"
+import HorizontalCard from "pages/main/item-card-horizontal/horizontal-card"
+import Footer from "components/footer/footer"
 
-export default function PortfolioMain() {
+const Home = () => {
     return (
-        <div className="container">
+        <div className="container" style={styles.container}>
             <Header />
             <SelfPicCard/>
                 <SocialLinks/>
             <div className="featured-works container">
-                <h1>Featured Projects</h1>
+                <h1 id="works1">Featured Projects</h1>
                 <div className={"horizontal-grid"}>
                     <ItemCard
                         img={"./images/resources/work-1-bg.png"}
@@ -30,7 +31,7 @@ export default function PortfolioMain() {
                 </div>
             </div>
             <div className="other-works container">
-                <h1>Other Works</h1>
+                <h1 id="works2">Other Works</h1> 
                 <div className={"horizontal-grid"}>
                     <ItemCard
                         img={"./images/resources/work-1-bg.png"}
@@ -65,7 +66,7 @@ export default function PortfolioMain() {
                 </div>
             </div>
             <div className="misc-works container">
-                <h1>Miscellaneous Works</h1>
+                <h1 id="misc">Miscellaneous Works</h1>
                 <div className={"vertical-grid"}>
                     <HorizontalCard
                         itemName={"Creative Writing Project --- Expansive Worldbuilding"}
@@ -83,3 +84,5 @@ export default function PortfolioMain() {
         </div>
     );
 }
+
+export default Home;

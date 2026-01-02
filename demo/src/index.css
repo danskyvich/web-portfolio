@@ -8,3 +8,10 @@
 h1 {
   font-size: 1.75em;
 }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100vh;
+}

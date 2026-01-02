@@ -1,7 +1,7 @@
 import styles from './header-card.module.css';
 
-const HeaderCard = ({ url, text, textColor, bgColor }) => {
-    return <a href={url} className={styles.header} style={{ backgroundColor: bgColor }}><p style={{ color: textColor }}>{text}</p></a>
-};
+const HeaderCard = ({ link, text, textColor, bgColor }) => {
+    return <a className={styles.header} href={link} style={{ backgroundColor: bgColor, color: textColor}}>{text}</a>
+    };
 
 export default HeaderCard;

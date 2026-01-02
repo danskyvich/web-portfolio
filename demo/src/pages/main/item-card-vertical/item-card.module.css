@@ -2,28 +2,29 @@
     display: flex;
     flex: 0 1 auto;
     flex-direction: column; 
+    gap: 10px;
     width: 25%;
-    height: 100;
+    height: fit-content;
     border: 2px solid black;
     border-radius: 10px;
-    padding: 5px 5px 0 5px;
+    padding: 5px 5px 10px 5px; /*GAP should be the same as padding-bottom*/
     box-shadow: 1px 2px 2px rgb(61, 61, 61);
     cursor: pointer;
+    text-align: center;
 }
     .item-container img {
-        flex: 1;
+         flex: 0 1 auto;
         width: 100%;
         height: auto;
         object-fit: cover;
         border-radius: 5px;
     }
-    .item-container h1 {
-        flex: 1;
-        font-size: 1.25em;
-    }
-    .item-container p {
-        flex: 1;
+    .item-container.item-card-verti-heading {
+        flex: 0 2 auto;
         text-align: center;
+    }
+    .item-container.item-card-verti-p {
+         flex: 0 1 auto;
         font-size: 0.8em;
         margin: 2.5% 0%;
     }

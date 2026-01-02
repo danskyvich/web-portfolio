@@ -1,9 +1,0 @@
-.social-links-row {
-    display: flex;
-    flex: 0 1 auto;
-    height: fit-content;
-    justify-content: center;
-    align-items: center;
-    gap: 1%;
-    margin: 1.5% 0 4% 0;
-}

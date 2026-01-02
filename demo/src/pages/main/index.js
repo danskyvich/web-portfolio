@@ -2,17 +2,20 @@ import "./index.css"
 import styles from "index.css"
 import Header from "components/header/header.jsx"
 import SelfPicCard from "pages/main/self-pic-card/self-pic-card"
-import SocialLinks from "pages/main/social-links/social-links"
 import ItemCard from "pages/main/item-card-vertical/item-card"
 import HorizontalCard from "pages/main/item-card-horizontal/horizontal-card"
 import Footer from "components/footer/footer"
+import HeaderCard from "../../components/header-card/header-card"
 
 const Home = () => {
     return (
         <div className="container" style={styles.container}>
             <Header />
             <SelfPicCard/>
-                <SocialLinks/>
+            <HeaderCard
+                link={""}
+                text={"View my resume!"}
+            />
             <div className="featured-works container">
                 <h1 id="works1">Featured Projects</h1>
                 <div className={"horizontal-grid"}>
@@ -35,8 +38,8 @@ const Home = () => {
                 <div className={"horizontal-grid"}>
                     <ItemCard
                         img={"./images/resources/work-1-bg.png"}
-                        itemName={"Project Name"}
-                        itemDesc={"Place a short description here about this specific project."}
+                        itemName={"TOKUEN Web App"}
+                        itemDesc={"A full-stack web application for the TOKUEN startup."}
                     />
                     <ItemCard
                         img={"./images/resources/work-1-bg.png"}

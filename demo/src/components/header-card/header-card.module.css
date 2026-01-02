@@ -1,5 +1,5 @@
 /*Header card decoration */
-header a {
+header .header-card-design {
     display: flex;
     flex: 0 1 auto;
     border: 2px solid black;

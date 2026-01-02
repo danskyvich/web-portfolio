@@ -1,0 +1,9 @@
+.resume-container {
+    display: flex;
+    flex: 1;
+    height: fit-content;
+    justify-content: center;
+}
+    #resume-button {
+        border: 2px solid black;
+    }

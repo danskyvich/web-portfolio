@@ -1,7 +1,7 @@
 import "./index.css"
 import { Routes, Route } from 'react-router-dom'
 import Home from "./pages/main/index"
-import AboutMe from "pages/about-me/about-me"
+import AboutMe from "./pages/about-me/about-me"
 
 const App = () => {
     return ( 

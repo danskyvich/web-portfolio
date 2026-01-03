@@ -17,12 +17,16 @@ export default function Header() {
                 link={"/about-me"}
                 text={"About me"}
             />
+            </div>
+            <div className={styles['right-side']}>
             <HeaderCard
-            style={` ${styles.header} ${styles[".left-side"]} ${styles["left-end"]} `}
+            style={` ${styles.header} ${styles[".right-side"]} `}
                 url={""}
                 text={"Contact me"}
                 textColor={"white"}
-                bgColor={"black"} />
-        </div>
+                bgColor={"black"}
+                width={"15em"}
+                 />
+            </div>
     </header>
 }

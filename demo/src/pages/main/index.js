@@ -28,11 +28,11 @@ const Home = () => {
                         img={"./images/card-covers/work-1-bg.png"}
                         itemName={"TOKUEN Website"}
                         itemDesc={"The main web application of TOKUEN's web interface."}
-                        textColor={"white"}
-                        headingColor={"white"}
-                        contentColor={"white"}
-                        bgColor={"#85409D"}
+                        headingColor={"black"}
+                        contentColor={"black"}
+                        bgColor={"#9656e3"}
                         progress={"In progress"}
+                        shadowAttributes={"5px 7px #7143aaff"}
                     />
                     <ItemCard
                         img={"./images/card-covers/work-1-bg.png"}
@@ -41,6 +41,7 @@ const Home = () => {
                         textColor={"white"}
                         bgColor={"#EEA727"}
                         progress={"Finished"}
+                        shadowAttributes={"5px 7px #ad7d25ff"}
                     />
                 </div>
             </div>
@@ -49,10 +50,10 @@ const Home = () => {
                 <div className={"horizontal-grid"}>
                     <ItemCard
                         img={"./images/card-covers/hex-color.png"}
-                        itemName={"Hexadecimal to color converter"}
+                        itemName={"Hexadecimal → Color converter"}
                         itemDesc={"A simple, JS website that converts hexadecimal input to its corresponding color equivalent"}
-                        borderAttributes={"2px solid black"}
-                        url={"https://github.com/danskyvich/hexadecimal-to-color-converter"}
+                        borderAttributes={"4px solid black"}
+                        url={"https://danskyvich.github.io/hexadecimal-to-color-converter/"}
                         headingColor={"black"}
                         contentColor={"black"}
                     />
@@ -60,31 +61,31 @@ const Home = () => {
                         img={"./images/card-covers/work-1-bg.png"}
                         itemName={"Project Name"}
                         itemDesc={"Place a short description here about this specific project."}
-                        borderAttributes={"2px solid black"}
+                        borderAttributes={"4px solid black"}
                     />
                     <ItemCard
                         img={"./images/card-covers/work-1-bg.png"}
                         itemName={"Project Name"}
                         itemDesc={"Place a short description here about this specific project."}
-                        borderAttributes={"2px solid black"}
+                        borderAttributes={"4px solid black"}
                     />
                     <ItemCard
                         img={"./images/card-covers/work-1-bg.png"}
                         itemName={"Project Name"}
                         itemDesc={"Place a short description here about this specific project."}
-                        borderAttributes={"2px solid black"}
+                        borderAttributes={"4px solid black"}
                     />
                     <ItemCard
                         img={"./images/card-covers/work-1-bg.png"}
                         itemName={"Project Name"}
                         itemDesc={"Place a short description here about this specific project."}
-                        borderAttributes={"2px solid black"}
+                        borderAttributes={"4px solid black"}
                     />
                     <ItemCard
                         img={"./images/card-covers/work-1-bg.png"}
                         itemName={"Project Name"}
                         itemDesc={"Place a short description here about this specific project."}
-                        borderAttributes={"2px solid black"}
+                        borderAttributes={"4px solid black"}
                     />
                 </div>
             </div>
@@ -95,7 +96,7 @@ const Home = () => {
                         itemName={"Creative Writing - Worldbuilding Project"}
                         itemDesc={"A wiki-style worldbuilding project of a fictional, European-style monarchial state"}   
                         width={"100%"}   
-                        borderAttributes={"2px solid white"} 
+                        borderAttributes={"4px solid white"} 
                         bgColor={""}        
                         textAlign={"start"} 
                         textStyle={"italic"}  
@@ -107,7 +108,7 @@ const Home = () => {
                         itemName={"Creative Writing - Worldbuilding Project"}
                         itemDesc={"A wiki-style worldbuilding project of a fictional, European-style monarchial state"}   
                         width={"100%"}   
-                        borderAttributes={"2px solid white"} 
+                        borderAttributes={"4px solid white"} 
                         bgColor={""}        
                         textAlign={"start"} 
                         textStyle={"italic"}  

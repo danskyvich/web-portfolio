@@ -1,4 +1,4 @@
-import HeaderCard from '../header-card/header-card'
+import HeaderCard from './header-card/header-card'
 import styles from './header.module.css'
 
 export default function Header() {
@@ -17,9 +17,8 @@ export default function Header() {
                 link={"/about-me"}
                 text={"About me"}
             />
-        </div>
-        <div className={styles['right-side']}>
             <HeaderCard
+            style={` ${styles.header} ${styles[".left-side"]} ${styles["left-end"]} `}
                 url={""}
                 text={"Contact me"}
                 textColor={"white"}

@@ -3,8 +3,7 @@
     display: flex;
     flex: 1;
     flex-direction: column;
-    background-color: #434E78;
-    color: white;
+    background-color:#4D2B8C;
   }
   .other-works {
     display: flex;
@@ -15,13 +14,22 @@
     display: flex;
     flex: 1;
     flex-direction: column;
-    background-color: #607B8F;
-    color: white;
+    background-color:#4D2B8C;
   }
 
 .featured-works h1, .other-works h1, .misc-works h1 {
   margin: 2% 1% 0 1%;
   align-self: start;
+}
+  #works1, #misc {
+    color: white
+  }
+
+.resume-container {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  margin: 1% 0 2% 0;
 }
 
 .horizontal-grid {
@@ -31,14 +39,15 @@
   gap: 20px;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  margin: 2%;
+  margin: 2% 0 4% 0;
 }
 .vertical-grid {
   display: flex;
   flex: 1;
   flex-direction: column;
   gap: 20px;
-  margin: 2%;
+  margin: 2% 4% 4% 4%;
+
 }
 
 a:hover, a:active, a::after, a:link {

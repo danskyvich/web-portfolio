@@ -1,10 +1,10 @@
 /*Header card decoration */
-header .header-card-design {
+.header-card-design {
     display: flex;
     flex: 0 1 auto;
     border: 2px solid black;
-    border-radius: 15px;
-    padding: 1em;
+    border-radius: 5px;
+    padding: 0.2em;
     width: 8em;
     height: 2em;
     color: black;

@@ -5,26 +5,34 @@
     gap: 10px;
     width: 25%;
     height: fit-content;
-    border: 2px solid black;
     border-radius: 10px;
-    padding: 5px 5px 10px 5px; /*GAP should be the same as padding-bottom*/
-    box-shadow: 1px 2px 2px rgb(61, 61, 61);
     cursor: pointer;
     text-align: center;
 }
     .item-container img {
-         flex: 0 1 auto;
+        flex: 0 1 auto;
         width: 100%;
         height: auto;
         object-fit: cover;
-        border-radius: 5px;
+        border-radius: 10px 10px 0px 0px;
     }
     .item-container.item-card-verti-heading {
         flex: 0 2 auto;
         text-align: center;
     }
     .item-container.item-card-verti-p {
-         flex: 0 1 auto;
+        flex: 0 1 auto;
         font-size: 0.8em;
-        margin: 2.5% 0%;
+    }
+    .item-container a:hover, a:active, a:link, a:before {
+        text-decoration: none;
+    }
+.item-container-footer-info {
+    display: flex;
+    flex: 1;
+    height: fit-content;
+}
+    .progress {
+        flex: 1;
+        font-size: 0.8em;
     }

@@ -1,0 +1,20 @@
+{
+  "name": "web-portfolio",
+  "version": "1.0.0",
+  "description": "My personal website portfolio",
+  "homepage": "https://github.com/danskyvich/web-portfolio#readme",
+  "bugs": {
+    "url": "https://github.com/danskyvich/web-portfolio/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danskyvich/web-portfolio.git"
+  },
+  "license": "ISC",
+  "author": "Danilo Pelin",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

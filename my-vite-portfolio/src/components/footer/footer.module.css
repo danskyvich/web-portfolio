@@ -1,0 +1,40 @@
+.footer-container {
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: column;
+    height: fit-content;
+    background-color: rgb(41, 41, 41);
+    padding: 2% 0;
+}
+    .footer-text {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        gap: 5px;
+        color: rgb(163, 163, 163);
+        font-size: 0.8em;
+        align-items: center;
+    }
+        .footer-text > a:hover, a:active, a:link, a:before, a:after {
+            color: rgb(110, 110, 246);
+        }
+    .footer-socials {
+        display: flex;
+        flex: 1;
+        padding: 1% 10%;
+    }
+        .email, .location, .phone {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            margin: 0 2.5%;
+        }
+            #label {
+                color: rgb(163, 163, 163);
+                font-size: 0.8em;
+            }
+            #content {
+                color: white;
+                font-size: 0.9em;
+                padding: 1.5% 0;
+            }

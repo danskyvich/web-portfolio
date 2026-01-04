@@ -1,0 +1,28 @@
+.header-container {
+    box-sizing: border-box;
+    display: flex;
+    flex: 1;
+    width: 100%;
+    height: fit-content;
+    padding: 0 5% 0 5%
+}
+    .header-container > .left {
+        display: flex;
+        flex: 0 1 auto;
+        width: 50%;
+        gap: 2%;
+    }
+        .header-container > .left > img {
+            display: flex;
+            flex: 0 1 auto;
+            width: 5em;
+            height: 5em;
+            border-radius: 10px;
+        }
+
+    .header-container > .right {
+        display: flex;
+        flex: 0 1 auto;
+        width: 50%;
+        justify-content: flex-end;
+    }

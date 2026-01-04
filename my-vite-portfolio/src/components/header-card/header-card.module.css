@@ -1,0 +1,12 @@
+.header-card-container {
+    display: flex;
+    flex: 0 1 auto;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 1% 4%;
+    width: 5em;
+    height: 3.75em;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 3px 4px gray;
+}

@@ -1,0 +1,29 @@
+.self-pic-container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+}
+    .self-pic-container > .pic {
+        flex: 0 1 auto;
+        width: 18em;
+        height: auto;
+        object-fit: contain;
+        align-self: center;
+        border: 7.5px solid black;
+        border-radius: 50%;
+        margin: 15% 0 0 0;
+    }
+    .self-pic-container > p {
+        font-size: 2em;
+        font-weight: 800;
+        margin: 4% 10%;
+    }
+    .resume-container {
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        margin-bottom: 4%;
+    }

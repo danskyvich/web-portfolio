@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    width: 100vw;
     height: 100vh;
     padding: 2% 0 0 0;
 }
@@ -11,3 +10,32 @@
         flex-direction: column;
         flex: 1;
     }
+        .section {
+            display: flex;
+            flex-direction: column;
+            flex: 0 1 auto;
+            height: fit-content;
+            padding: 2% 0;
+        }
+            .featured-works, .misc-works  {
+                background-color: rgb(0, 57, 92);
+                color: white;
+            }
+            .section > h1 {
+                padding: 2% 5%
+            }
+        .card-grid {
+            display: flex;
+            flex: 1;
+            margin: 1% 5% 3% 5%;
+            gap: 2%;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        .vertical-grid {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            margin: 1% 5% 3% 5%;
+            gap: 20px;
+        }

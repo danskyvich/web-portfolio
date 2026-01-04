@@ -8,12 +8,12 @@ export default function Header() {
                 <img src="favicon.svg" alt="web-logo"></img>
                 <HeaderCard
                     title={"Projects"}
-                    url={"#featured-works"}
+                    url={"/#featured-projects"}
                     textColor={"black"}
                 />
                 <HeaderCard
                     title={"Works"}
-                    url={"#other-works"}
+                    url={"/#other-works"}
                     textColor={"black"}
                 />
             </div>

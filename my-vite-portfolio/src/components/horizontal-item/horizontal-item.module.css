@@ -1,0 +1,21 @@
+.horizontal-container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    border: 4px solid white;
+    border-radius: 30px;
+    padding: 2%;
+    cursor: pointer;
+}
+        .horizontal-container > .horizontal-card:link, .horizontal-card:visited, .horizontal-card:hover, .horizontal-card:active {
+            color: white;
+        }
+        #title {
+            flex: 1;
+            font-size: 1.5em;
+            margin-bottom: 5px;
+        }
+        #content {
+            flex: 1;
+            font-size: 1.2em;;
+        }

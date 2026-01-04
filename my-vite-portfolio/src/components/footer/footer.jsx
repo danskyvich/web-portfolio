@@ -3,8 +3,9 @@ import styles from './footer.module.css'
 export default function Footer() {
     return <div className={styles['footer-container']}>
         <div className={styles['footer-text']}>
-            <p>Copyright @ 2025 -- <a href="https://github.com/danskyvich">Danilo Pelin</a></p>
+            <p>Copyright @ 2025 -- <a className={styles['github-a']}href="https://github.com/danskyvich" target="_blank" rel="noopener noreferrer">Danilo Pelin</a></p>
             <p>My personal portfolio, made w/ luv</p>
+            <hr/>
         </div>
         <div className={styles['footer-socials']}>
             <div className={styles.email}>

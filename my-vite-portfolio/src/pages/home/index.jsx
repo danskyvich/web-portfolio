@@ -1,13 +1,74 @@
 import styles from "./index.module.css"
 import Header from "../../components/header/header.jsx"
 import Footer from "../../components/footer/footer.jsx"
+import SelfPicCard from "../../components/self-pic-card/self-pic-card.jsx"
+import ItemCard from "../../components/box-card/item-card.jsx"
+import HorizontalCard from "../../components/horizontal-item/horizontal-item.jsx"
 
 export default function Home() {
     return <div className={styles['page-container']}>
         <Header/>
         <div className={styles['content-container']}>
-
+            <SelfPicCard/>
         </div>
+        <section className={` ${styles.section} ${styles['featured-works']} `}>
+            <h1 id={styles['featured-projects']}>Featured Projects</h1> 
+            <div className={styles['card-grid']}>
+                <ItemCard
+                    title={"Hexadecimal to Color converter"}
+                    content={"Converts hexadecimal input into its color equivalent, displaying its rgb and decimal details simultaneously."}
+                    img={"card-covers/hex-color.png"}
+                    url={"https://danskyvich.github.io/hexadecimal-to-color-converter/"}
+                    bgColor={"#092039ff"}
+                    textColor={"white"}
+                />
+                <ItemCard
+                    title={"TOKUEN Web Application"}
+                    content={"A web application implementing MERN stack for the TOKUEN application under a startup company."}
+                    img={"card-covers/hex-color.png"}
+                    bgColor={"#092039ff"}
+                    textColor={"white"}
+                />
+            </div>
+        </section>
+        <section className={` ${styles.section} ${styles['other-works']} `}>
+            <h1 id={styles['other-works']}>Other Works</h1> 
+            <div className={` ${styles['card-grid']}`}>
+                <ItemCard
+                    title={"Hexadecimal to Color converter"}
+                    content={"Converts hexadecimal input into its color equivalent, displaying its rgb and decimal details simultaneously."}
+                    img={"card-covers/hex-color.png"}
+                    url={"https://danskyvich.github.io/hexadecimal-to-color-converter/"}
+                    borderAttributes={"3px solid black"}
+                />
+                <ItemCard
+                    title={"Hexadecimal to Color converter"}
+                    content={"Converts hexadecimal input into its color equivalent, displaying its rgb and decimal details simultaneously."}
+                    img={"card-covers/hex-color.png"}
+                    borderAttributes={"3px solid black"}
+                />
+                <ItemCard
+                    title={"Hexadecimal to Color converter"}
+                    content={"Converts hexadecimal input into its color equivalent, displaying its rgb and decimal details simultaneously."}
+                    img={"card-covers/hex-color.png"}
+                    borderAttributes={"3px solid black"}
+                />
+            </div>
+        </section>
+        <section className={` ${styles.section} ${styles['misc-works']} `}>
+            <h1 id={styles['misc-works']}>Miscellaneous Works</h1> 
+            <div className={styles['vertical-grid']}>
+                <HorizontalCard
+                    title={"Creative Writing -- Worldbuilding of Chatten and Leucen"}
+                    content={"A wikipedia-style, worldbuilding project about a UK-style kingdom."}
+                    url={"https://iiwiki.com/wiki/Chatten and Leucen"}
+                />
+                <HorizontalCard
+                    title={"Cartography -- Daniel Burnham's Plan of Manila with a Subjective take"}
+                    content={"A subjective take of an alternate history where Manila adapted Burnham's proposed city improvements."}
+                />
+            </div>
+        </section>
         <Footer/>
     </div>
 }

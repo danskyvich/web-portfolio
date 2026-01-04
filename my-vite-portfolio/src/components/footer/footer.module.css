@@ -15,8 +15,18 @@
         font-size: 0.8em;
         align-items: center;
     }
-        .footer-text > a:hover, a:active, a:link, a:before, a:after {
+        .footer-text > .github-a:link, .github-a:visited, .github-a:active {
             color: rgb(110, 110, 246);
+        }
+        .footer-text > .github-a:hover {
+            text-decoration: underline;
+        }
+        .footer-text > hr {
+            width: 20em;
+            height: 1px;
+            border: none;
+            background-color: gray;
+            margin: 1cap;
         }
     .footer-socials {
         display: flex;

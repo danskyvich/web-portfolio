@@ -29,9 +29,3 @@
         width: 100%;
     }
 }
-
-@media (min-width: 320px) {
-    .header-card-container {
-        
-    }
-}

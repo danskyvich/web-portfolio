@@ -4,19 +4,18 @@
     flex-wrap: wrap;
     width: 35em;
     height: fit-content;
-    flex-direction: column;
     border-radius: 15px;
     text-align: center;
     align-items: center;
     cursor: pointer;
-    margin: 2;
+    margin: 3% 0;
 }
     
     .item-card-container:link, .item-card-container:visited, .item-card-container:active, .item-card-container:hover {
         color: black;
     }
     .item-card-container > img {
-        flex: 1 0 auto;
+        flex: 0 1 auto;
         width: 100%;
         height: 50%;
         object-fit:cover;
@@ -25,12 +24,11 @@
     .item-card-container > .text {
         box-sizing: border-box;
         display: flex;
-        flex: 0 1 auto;
+        flex: 1 0 auto;
         flex-direction: column;
-        gap: 5px;
         width: 100%;
-        height: 100%;
-        padding: 4% 6%;
+        height: fit-content;
+        padding: 5% 6%;
     }
         .text > #item-title {
             flex: 0 1 auto;
@@ -45,33 +43,16 @@
             font-weight: 500;
         }
 
-        
-@media (max-width: 600px) {
-    .item-card-container {
+
+@media screen and (max-width: 600px) {
+    .item-card-container{
         width: 100%;
-        flex-wrap: nowrap;
     }
-        .item-card-container > img{
-            object-fit: cover;
-        }
-        .item-card-container > .text{
-            padding: 2% 1%;
-        }
-        .item-card-container > .text > #item-title {
-            font-size: 1em;
-        }
-        .item-card-container > .text > #item-content {
-            font-size: 0.8em;
-        }
 }
 
-@media screen and (max-width: 870px) {
+/*Make text smaller*/
+@media screen and (max-width: 400px) {
     .text > #item-title {
-            font-size: 1.25em;
-            font-weight: bolder;
-        }
-        .text > #item-content {
-            font-size: 1em;
-            font-weight: 500;
-        }
+        font-size: 1.5em;
+    }
 }

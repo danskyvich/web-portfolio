@@ -24,7 +24,7 @@ export default function Home() {
                 />
                 <ItemCard
                     title={"TOKUEN Web Application"}
-                    content={"A web application implementing MERN stack for the TOKUEN application under a startup company."}
+                    content={"Website for startup"}
                     img={"card-covers/tokuen-web.png"}
                     url={"https://github.com/danskyvich/tokn-web"}
                     bgColor={"#c33232ff"}

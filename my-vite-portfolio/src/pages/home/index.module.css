@@ -17,13 +17,25 @@
             flex: 0 1 auto;
             height: fit-content;
             padding: 2% 0;
-        }
+        }   
             .featured-works, .misc-works  {
-                background-color: rgb(0, 57, 92);
+                background-color: rgb(46, 0, 54);
                 color: white;
             }
+                .featured-works {
+                    text-align: center;
+                }
             .section > h1 {
-                padding: 2% 5%
+                padding: 1% 5% 0 5%;
+                font-size: 3.5em;
+            }
+            .section > .subtitle{
+                padding: 0 5% 2% 5%;
+                font-size: 1.75em;
+                font-style: normal;
+                font-weight: 600;
+                width: 50%;
+
             }
         .card-grid{
             display: flex;

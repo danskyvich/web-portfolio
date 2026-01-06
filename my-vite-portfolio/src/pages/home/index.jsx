@@ -16,53 +16,51 @@ export default function Home() {
             <div className={styles['card-grid']}>
                 <ItemCard
                     title={"Hexadecimal to Color converter"}
-                    content={"Converts hexadecimal input into its color equivalent, displaying its rgb and decimal details simultaneously."}
+                    content={"Converts hex to its color value equivalent"}
                     img={"card-covers/hex-color.png"}
                     url={"https://danskyvich.github.io/hexadecimal-to-color-converter/"}
-                    bgColor={"#703c1fff"}
+                    bgColor={"#3471a3ff"}
                     textColor={"white"}
-                    moreInfo={'School work'}
                 />
                 <ItemCard
                     title={"TOKUEN Web Application"}
                     content={"A web application implementing MERN stack for the TOKUEN application under a startup company."}
-                    img={"card-covers/hex-color.png"}
-                    bgColor={"#937e21ff"}
+                    img={"card-covers/tokuen-web.png"}
+                    url={"https://github.com/danskyvich/tokn-web"}
+                    bgColor={"#c33232ff"}
                     textColor={"white"}
-                    moreInfo={"Startup"}
                 />
             </div>
         </section>
         <section className={` ${styles.section} ${styles['other-works']} `}>
             <h1 id={styles['other-works']}>Other Works</h1> 
+            <p className={styles.subtitle}>Here lies the entirety of all my works (from both academic and personal purposes) </p>
             <div className={styles['card-grid']}>
                 {/* Use this to add a card and modify any information using available attributes.
                     Attributes include: title, content, img, url, alt, & borderAttributes */}
                 <ItemCard
                     title={"Hexadecimal to Color converter"}
                     content={"Converts hexadecimal input into its color equivalent, displaying its rgb and decimal details simultaneously."}
-                    img={"card-covers/hex-color.png"}
-                    url={"https://danskyvich.github.io/hexadecimal-to-color-converter/"}
+                    img={"card-covers/work-1-bg.png"}
                     borderAttributes={"3px solid black"}
                     alt={"hex-color website screenshot"}
                 />
                 <ItemCard
                     title={"Hexadecimal to Color converter"}
                     content={"Converts hexadecimal input into its color equivalent, displaying its rgb and decimal details simultaneously."}
-                    img={"card-covers/hex-color.png"}
+                    img={"card-covers/work-1-bg.png"}
                     borderAttributes={"3px solid black"}
                 />
                 <ItemCard
                     title={"Hexadecimal to Color converter"}
                     content={"Converts hexadecimal input into its color equivalent, displaying its rgb and decimal details simultaneously."}
-                    img={"card-covers/hex-color.png"}
+                    img={"card-covers/work-1-bg.png"}
                     borderAttributes={"3px solid black"}
                 />
                 <ItemCard
                     title={"Hexadecimal to Color converter"}
                     content={"Converts hexadecimal input into its color equivalent, displaying its rgb and decimal details simultaneously."}
-                    img={"card-covers/hex-color.png"}
-                    url={"https://danskyvich.github.io/hexadecimal-to-color-converter/"}
+                    img={"card-covers/work-1-bg.png"}
                     borderAttributes={"3px solid black"}
                 />
                 
@@ -70,6 +68,7 @@ export default function Home() {
         </section>
         <section className={` ${styles.section} ${styles['misc-works']} `}>
             <h1 id={styles['misc-works']}>Miscellaneous Works</h1> 
+            <p className={styles.subtitle}>My personal works or projects that spans genres and tackles different fields.</p>
             <div className={styles['vertical-grid']}>
                 {/* Use this to add a card and modify any information using available attributes.
                     Attributes include: title, content, url, bgColor, and borderAttributes*/}

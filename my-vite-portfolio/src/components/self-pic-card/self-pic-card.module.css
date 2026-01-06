@@ -21,7 +21,7 @@
     .self-pic-container > p {
         font-size: 2em;
         font-weight: 800;
-        margin: 1% 10%;
+        margin: 1% 15% 0 15%;
     }
         .self-pic-container > p > #name {
             color: rgb(44, 112, 155);
@@ -30,7 +30,7 @@
         display: flex;
         flex: 1;
         justify-content: center;
-        margin-bottom: 4%;
+        height: fit-content;
     }
 
 @media screen and (max-width: 480px) {

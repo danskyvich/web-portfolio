@@ -30,7 +30,7 @@
                 font-size: 3.5em;
             }
             .section > .subtitle{
-                padding: 0 5% 1% 5%;
+                padding: 0 5% 0 5%;
                 font-size: 1.75em;
                 font-style: normal;
                 font-weight: 600;
@@ -40,7 +40,6 @@
         .card-grid{
             display: flex;
             flex: 0 1 auto;
-            margin: 2%;
             flex-wrap: wrap;
             justify-content: space-evenly;
         }

@@ -3,10 +3,35 @@
     flex: 0 1 auto;
     border: 2px solid black;
     border-radius: 10px;
-    padding: 1% 4%;
-    width: 5em;
-    height: 3.75em;
+    width: 9em;
+    height: 5em;
     align-items: center;
     justify-content: center;
     box-shadow: 3px 4px gray;
+    font-size: 1em;
+    cursor: pointer;
+    padding: 0 3%
+}
+
+@media (max-width: 600px) {
+    .header-card-container {
+        padding: 0% 6%;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-card-container {
+        flex: 0 1 auto;
+        box-sizing: border-box;
+        flex-wrap: wrap;
+        height: 3em;
+        margin: 2% 0;
+        width: 100%;
+    }
+}
+
+@media (min-width: 320px) {
+    .header-card-container {
+        
+    }
 }

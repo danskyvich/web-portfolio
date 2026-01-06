@@ -5,6 +5,7 @@
     align-self: center;
     justify-content: center;
     text-align: center;
+    height: fit-content;
 }
     .self-pic-container > .pic {
         flex: 0 1 auto;
@@ -15,15 +16,29 @@
         border: 7.5px solid black;
         border-radius: 50%;
         margin: 15% 0 0 0;
+        cursor: pointer;
     }
     .self-pic-container > p {
         font-size: 2em;
         font-weight: 800;
-        margin: 4% 10%;
+        margin: 1% 10%;
     }
+        .self-pic-container > p > #name {
+            color: rgb(44, 112, 155);
+        }
     .resume-container {
         display: flex;
         flex: 1;
         justify-content: center;
         margin-bottom: 4%;
     }
+
+@media screen and (max-width: 480px) {
+    .self-pic-container > p {
+        font-size: 1.5em;
+        margin: 4% 2%;
+    }
+    .self-pic-container > .pic {
+        width: 60%;
+    }
+}

@@ -8,6 +8,7 @@
     .content-container {
         display: flex;
         flex-direction: column;
+        height: fit-content;
         flex: 1;
     }
         .section {
@@ -24,11 +25,10 @@
             .section > h1 {
                 padding: 2% 5%
             }
-        .card-grid {
+        .card-grid{
             display: flex;
-            flex: 1;
+            flex: 0 1 auto;
             margin: 1% 5% 3% 5%;
-            gap: 2%;
             flex-wrap: wrap;
             justify-content: space-evenly;
         }
@@ -38,4 +38,19 @@
             flex: 1;
             margin: 1% 5% 3% 5%;
             gap: 20px;
+            height: fit-content;
         }
+
+        /* Media Queries */
+@media (max-width: 600px) {
+    .card-grid {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 300px) {
+    .page-container {
+        box-sizing: border-box;
+        flex: 0 1 auto;
+    }
+}

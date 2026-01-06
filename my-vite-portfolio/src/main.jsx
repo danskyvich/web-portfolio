@@ -6,7 +6,7 @@ import { Analytics } from '@vercel/analytics/react'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Analytics/>
+    <Analytics mode='production'/>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App/>}/>

@@ -9,7 +9,7 @@
     text-align: center;
     align-items: center;
     cursor: pointer;
-    margin: 1% 0;
+    margin: 2;
 }
     
     .item-card-container:link, .item-card-container:visited, .item-card-container:active, .item-card-container:hover {

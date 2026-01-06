@@ -2,7 +2,7 @@
     display: flex;
     flex: 0 1 auto;
     flex-wrap: wrap;
-    width: 25em;
+    width: 30em;
     height: fit-content;
     flex-direction: column;
     border-radius: 15px;
@@ -11,9 +11,7 @@
     cursor: pointer;
     margin: 1% 0;
 }
-    .item-card-container::nth-child(3n+1) {
-
-    }
+    
     .item-card-container:link, .item-card-container:visited, .item-card-container:active, .item-card-container:hover {
         color: black;
     }

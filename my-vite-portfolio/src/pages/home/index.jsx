@@ -4,9 +4,11 @@ import Footer from "../../components/footer/footer.jsx"
 import SelfPicCard from "../../components/self-pic-card/self-pic-card.jsx"
 import ItemCard from "../../components/vertical-card/item-card.jsx"
 import HorizontalCard from "../../components/horizontal-item/horizontal-item.jsx"
+import { Analytics } from '@vercel/analytics'
 
 export default function Home() {
     return <div className={styles['page-container']}>
+        <Analytics/>
         <Header/>
         <div className={styles['content-container']}>
             <SelfPicCard/>

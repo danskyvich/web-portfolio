@@ -40,7 +40,7 @@
         .card-grid{
             display: flex;
             flex: 0 1 auto;
-            margin: 1% 5% 3% 5%;
+            margin: 2%;
             flex-wrap: wrap;
             justify-content: space-evenly;
         }

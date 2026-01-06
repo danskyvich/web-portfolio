@@ -9,7 +9,7 @@
 }
     .self-pic-container > .pic {
         flex: 0 1 auto;
-        width: 18em;
+        width: 25em;
         height: auto;
         object-fit: contain;
         align-self: center;

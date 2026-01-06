@@ -17,14 +17,14 @@ export default function Header() {
                 textColor={"black"}
                 bgColor={"white"}
             />
-            
+            <div className={styles['space']}/>
             <HeaderCard
                 title={"Contact Me"}
                 url={""}
                 textColor={"white"}
                 bgColor={"black"}
                 width={"9em"}
-                align={"flex-end"}
+                id={'right'}
                 />
         </header>
     )

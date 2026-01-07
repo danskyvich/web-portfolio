@@ -33,7 +33,7 @@
         flex: 1;
         flex-direction: row;
         color: rgb(207, 207, 207);
-        margin: 5% 5% 1% 5%;
+        margin: 1% 5% 1% 5%;
     }
         .nav-links {
             display: flex;

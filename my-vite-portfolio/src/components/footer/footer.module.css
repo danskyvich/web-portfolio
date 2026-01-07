@@ -26,29 +26,38 @@
             height: 1px;
             border: none;
             background-color: gray;
-            margin: 1cap;
+            margin: 0.5;
         }
-    .footer-socials {
+    .top-nav-container {
         display: flex;
         flex: 1;
-        padding: 1% 10%;
+        flex-direction: row;
+        color: rgb(207, 207, 207);
+        margin: 5% 5% 1% 5%;
     }
-        .email, .location, .phone {
+        .nav-links {
             display: flex;
-            flex-direction: column;
             flex: 1;
-            margin: 0 2.5%;
+            width: 50%;
+            gap: 2.5%;
+            font-weight: 600;
+            font-size: 0.8em;
+            justify-content: center;
         }
-            #label {
-                color: rgb(163, 163, 163);
+        .your-name {
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            width: 50%;
+            align-items: end;
+        }
+            .your-name > #name-bold {
+                font-weight: 600;
+                font-size: 1.3em;
+            }
+            .your-name > #motto {
                 font-size: 0.8em;
             }
-            #content {
-                color: white;
-                font-size: 0.9em;
-                padding: 1.5% 0;
-            }
-
 
 @media screen and (max-width: 600px) {
     .footer-socials {

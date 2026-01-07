@@ -1,4 +1,5 @@
 import styles from './footer.module.css'
+import HeaderCard from '../../components/header-card/header-card'
 
 export default function Footer() {
     return <div className={styles['footer-container']}>
@@ -7,18 +8,32 @@ export default function Footer() {
             <p>My personal portfolio, made w/ luv</p>
             <hr/>
         </div>
-        <div className={styles['footer-socials']}>
-            <div className={styles.email}>
-                <p id={styles.label}>Email</p>
-                <p id={styles.content}>danilocanabanopelinjr@gmail.com</p>
+        <div className={styles['top-nav-container']}>
+            <div className={styles['nav-links']}>
+                <HeaderCard
+                    title={"Featured"}
+                    lineColor={"#8f8f8f"}
+                    />
+                <HeaderCard
+                    title={"Works"}
+                    lineColor={"#8f8f8f"}
+                    />
+                <HeaderCard
+                    title={"Others"}
+                    lineColor={"#8f8f8f"}
+                    />
+                <HeaderCard
+                    title={"Tech stack"}
+                    lineColor={"#8f8f8f"}
+                    />
+                <HeaderCard
+                    title={"Contacts"}
+                    lineColor={"#8f8f8f"}
+                    />
             </div>
-            <div className={styles.phone}>
-                <p id={styles.label}>Phone</p>
-                <p id={styles.content}>(+63) 9283782089</p>
-            </div>
-            <div className={styles.location}>
-                <p id={styles.label}>Location</p>
-                <p id={styles.content}>📍Quezon City, NCR, 1107</p>
+            <div className={styles['your-name']}>
+                <p id={styles['name-bold']}>DANILO PELIN</p>
+                <p id={styles['motto']}>Life is all about coffee.</p>
             </div>
         </div>
     </div>

@@ -1,21 +1,21 @@
 .header-card-container {
-    display: flex;
-    flex: 0 1 auto;
-    border: 2px solid black;
-    border-radius: 10px;
-    width: 5em;
-    height: 5em;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 3px 4px gray;
-    font-size: 1em;
+    display: inline-block;
     cursor: pointer;
-    padding: 0 3%
+    font-weight: 600;
+    height: fit-content;
+    margin: 0 0.5%;
 }
+    .header-underline {
+        display: block;
+        height: 4px;
+        width: 100%;
+        transform-origin: left;
+    }
 
 @media (max-width: 600px) {
     .header-card-container {
         padding: 0% 6%;
+        background-color: rgb(235, 235, 235);
     }
 }
 
@@ -25,7 +25,7 @@
         box-sizing: border-box;
         flex-wrap: wrap;
         height: 3em;
-        margin: 2% 0;
+        margin: 0% 0;
         width: 100%;
     }
 }

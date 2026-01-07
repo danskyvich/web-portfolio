@@ -10,8 +10,8 @@ const HorizontalCard = ({title, content, url, src, borderAttributes, alt}) => {
             variants={fadeInMotion} 
             initial="initial"
             whileInView="whileInView"
-            whileHover={{ y: -10, color: 'rgb(0, 57, 92)', backgroundColor: '#ffffff', transition: { duration: 0.1}}}
-            whileTap={{ y: -10, color: '#ffffff', backgroundColor: 'rgb(0, 57, 92)', transition: { duration: 0.1}}}
+            whileHover={{ y: -10, color: 'rgb(46, 0, 54)', backgroundColor: '#ffffff', transition: { duration: 0.1}}}
+            whileTap={{ y: -10, color: '#ffffff', backgroundColor: 'rgba(24, 24, 24, 1)', transition: { duration: 0.1}}}
             transition="transition"
             viewport="viewport">
                 <img className={styles['horizontal-container-img']} src={src} alt={alt}/>

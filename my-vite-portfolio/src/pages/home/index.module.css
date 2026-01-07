@@ -1,15 +1,23 @@
 .page-container {
-    display: flex;
-    flex-direction: column;
     box-sizing: border-box;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
     height: 100vh;
-    padding: 2% 0 0 0;
+    gap: 0;
 }
-    .content-container {
+    .banner-container {
+        box-sizing: border-box;
         display: flex;
+        flex: 1;
         flex-direction: column;
         height: fit-content;
+    }
+    .content-container {
+        display: flex;
         flex: 1;
+        flex-direction: column;
+        height: fit-content;
     }
         .section {
             box-sizing: border-box;
@@ -19,6 +27,11 @@
             height: fit-content;
             padding: 2% 0;
         }   
+            .stack-wrapper {
+                display: flex;
+                flex: 1;
+                justify-content: space-evenly;
+            }
             .featured-works, .misc-works  {
                 background-color: rgb(46, 0, 54);
                 color: white;
@@ -45,6 +58,7 @@
             flex-wrap: wrap;
             justify-content: space-evenly;
             padding: 1.5%;
+            row-gap: 15px;
         }
         .vertical-grid {
             display: flex;

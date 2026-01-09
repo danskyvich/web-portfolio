@@ -3,10 +3,11 @@
 import styles from './header.module.css'
 import HeaderCard from '../header-card/header-card.jsx'
 
-export default function Header() {
+const Header = () => {
     return (
         <>
-            <header className={styles['header-container']}>
+            <header className={styles['header-container']}
+            >
             <img src="favicon.svg" alt="web-logo"></img>
             <HeaderCard
                 url={"#featured-projects"}
@@ -21,20 +22,14 @@ export default function Header() {
                 textColor={'#ef97efff'}
             />
             <HeaderCard
-                url={"#misc-works"}
-                title={"Others"}
-                lineColor={'#ed0d8cff'}
-                textColor={'#ef97efff'}
-            />
-            <HeaderCard
-                url={"#contact"}
+                url={"#tech-stack"}
                 title={"Tech stack"}
                 lineColor={'#ed0d8cff'}
                 textColor={'#ef97efff'}
             />
             <HeaderCard
                 url={"#contact"}
-                title={"Contact"}
+                title={"Contact me"}
                 lineColor={'#ed0d8cff'}
                 textColor={'#ef97efff'}
             />
@@ -42,3 +37,5 @@ export default function Header() {
         </>
     )
 }
+
+export default Header;

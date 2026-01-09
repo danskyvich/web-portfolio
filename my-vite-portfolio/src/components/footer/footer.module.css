@@ -3,7 +3,7 @@
     flex: 0 1 auto;
     flex-direction: column;
     height: fit-content;
-    background-color: rgb(41, 41, 41);
+    background-color: rgb(11, 0, 45);
     padding: 2% 0;
 }
     .footer-text {
@@ -11,29 +11,23 @@
         flex: 1;
         flex-direction: column;
         gap: 5px;
-        color: rgb(163, 163, 163);
+        color: rgb(255, 255, 255);
         font-size: 0.8em;
         align-items: center;
     }
-        .footer-text > .github-a:link, .github-a:visited, .github-a:active {
-            color: rgb(110, 110, 246);
-        }
-        .footer-text > .github-a:hover {
-            text-decoration: underline;
-        }
         .footer-text > hr {
             width: 20em;
             height: 1px;
             border: none;
-            background-color: gray;
+            background-color: rgb(255, 255, 255);
             margin: 0.5;
         }
     .top-nav-container {
         display: flex;
         flex: 1;
         flex-direction: row;
-        color: rgb(207, 207, 207);
         margin: 1% 5% 1% 5%;
+        color: white;
     }
         .nav-links {
             display: flex;
@@ -42,7 +36,7 @@
             gap: 2.5%;
             font-weight: 600;
             font-size: 0.8em;
-            justify-content: center;
+            align-items: center;
         }
         .your-name {
             display: flex;
@@ -54,18 +48,8 @@
             .your-name > #name-bold {
                 font-weight: 600;
                 font-size: 1.3em;
+                color: #ed0d8cff;
             }
             .your-name > #motto {
                 font-size: 0.8em;
             }
-
-@media screen and (max-width: 600px) {
-    .footer-socials {
-        flex-direction: column;
-        text-align: center;
-        font-size: 0.7em;
-    }
-    .footer-text {
-        font-size: 0.7em;
-    }
-}

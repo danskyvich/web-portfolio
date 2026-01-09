@@ -1,0 +1,47 @@
+/**GENERAL**/
+.normal-text {
+    color: white;
+    font-size: 1.75em;
+    font-weight: 600;
+}
+
+.header-text {
+    font-size: 3.5em;
+    color: #ed0d8cff;
+    font-weight: 700;
+}
+
+/**CONTENT**/
+
+.contact-me-main {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    padding: 5% 5% 15% 5%;
+}
+    .contact-me-text {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        width: 50vw;
+        height: 100%;
+    }
+        .right-aligned-text {
+            align-self: flex-end;
+        }
+        .right-aligned-desc {
+            color: rgb(158, 158, 158);
+            width: 75%;
+            padding: 3% 0;
+            font-weight: 600;
+            line-height: 1.5;
+            letter-spacing: 1.2px;
+            text-align: end;
+        }
+        .social-links {
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            text-align: end;
+            width: 100%;
+        }

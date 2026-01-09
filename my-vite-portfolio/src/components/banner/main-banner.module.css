@@ -5,21 +5,26 @@
     flex-direction: column;
     height: fit-content;
     width: 50%;
-    padding: 15% 5%;
+    padding: 8% 5%;
 }
-    #normal-text {
-        flex: 1;
-        font-weight: 600;
-        color: #ffffff;
-        line-height: 1.5;
+    .banner-text {
+        color: white;
+        display: inline-block
+    }
+        .banner-text#upper, .banner-text#lower {
+            padding: 0 1.5%;
+            line-height: 1.5;
+            font-weight: 600;
+            letter-spacing: 1.4px;
         }
-        .important {
-            flex: 1;
-            display: block;
-            color: rgb(255, 255, 255);
+
+        #important {
+            display: inline-block;
+            color: white;
             font-size: 5.5em;
-            line-height: 0.8;
-            margin: 2% 0;
+            line-height: 0.85;
+            font-weight: 700;
+            padding: 2% 0;
         }
     .self-pic-container > hr {
         margin: 1% 0;

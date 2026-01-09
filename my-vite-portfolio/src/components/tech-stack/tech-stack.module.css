@@ -1,0 +1,37 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.stack-column {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 20px;
+}
+    /*stack header design*/
+    .stack-header.text {
+        display: flex;
+        flex: 0 1 auto;
+        position: relative;
+        background-color: #ed0d8cff;
+        padding: 4% 2%;
+        justify-content: center;
+        font-weight: 600;
+        height: fit-content;
+    }
+    .text {
+        color: white;
+    }
+    .behind {
+
+    }
+        .stack-list-item.text {
+            flex: 1;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            margin-bottom: 25px;
+            font-weight: 600;
+            font-size: 0.75em;
+            text-align: end;
+        }

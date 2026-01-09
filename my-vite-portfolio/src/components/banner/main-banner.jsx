@@ -1,9 +1,16 @@
 import styles from "./main-banner.module.css"
+import { motion } from 'motion/react'
 
-export default function Banner() {
+const Banner = ({ref}) => {
 
-    return <div className={styles['self-pic-container']}>
-       <p id={styles['normal-text']}>I'm a <span className={styles.important}>Front-end Developer</span><span id={styles['lower-text']}> whose aim is to create products that uplift individuals and help the community. <i>From the people, for the people.</i></span></p>
+    return <motion.div className={styles['self-pic-container']}
+        viewport={{ root: ref}}
+    >
+       <p className={styles['banner-text']}id={styles.upper}>I'm a </p>
+       <span id={styles.important}>Full-stack Engineer</span>
+       <p className={styles['banner-text']}id={styles.lower}> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean mauris libero.</p>
        <hr/>
-    </div>
+    </motion.div>
 }
+
+export default Banner;

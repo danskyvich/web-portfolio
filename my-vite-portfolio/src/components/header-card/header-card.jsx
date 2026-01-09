@@ -14,8 +14,8 @@ const HeaderCard = ({url, title, lineColor, textColor}) => {
             className={styles["header-underline"]}
             initial={{ scaleX: 0, backgroundColor: lineColor }}
             variants={{
-                hover: { scaleX: 1, backgroundColor: lineColor}}
-            }
+                hover: { scaleX: 1, backgroundColor: lineColor}
+            }}
             transition={{ duration: 0.3, ease: "easeOut"}}
         >
 

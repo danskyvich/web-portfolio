@@ -1,0 +1,19 @@
+.carousel-item-container:active {
+    list-style-type: none;
+    background-color: transparent;
+    padding: 2px;
+    border: 2px solid black;
+
+    /*makes sure that the center of the li is snapped when presented*/
+    scroll-snap-align: center;
+
+    /* forces the item to be as wide as the container*/
+    flex: 0 0 100%;
+}
+    .carousel-item-container:nth-child(even) {
+        background-color: gray;
+    }
+    .carousel-item-image {
+        height: auto;
+        width: 28em;
+    } 

@@ -4,7 +4,7 @@ import HeaderCard from '../../components/header-card/header-card'
 export default function Footer() {
     return <div className={styles['footer-container']}>
         <div className={styles['footer-text']}>
-            <p>Copyright @ 2025 -- <a className={styles['github-a']}href="https://github.com/danskyvich" target="_blank" rel="noopener noreferrer">Danilo Pelin</a></p>
+            <p>Copyright @ 2025</p>
             <p>My personal portfolio, made w/ luv</p>
             <hr/>
         </div>
@@ -12,23 +12,23 @@ export default function Footer() {
             <div className={styles['nav-links']}>
                 <HeaderCard
                     title={"Featured"}
-                    lineColor={"#8f8f8f"}
+                    lineColor={"#ef97efff"}
+                    url={'#featured-projects'}
                     />
                 <HeaderCard
                     title={"Works"}
-                    lineColor={"#8f8f8f"}
-                    />
-                <HeaderCard
-                    title={"Others"}
-                    lineColor={"#8f8f8f"}
+                    lineColor={"#ef97efff"}
+                    url={'#other-works'}
                     />
                 <HeaderCard
                     title={"Tech stack"}
-                    lineColor={"#8f8f8f"}
+                    lineColor={"#ef97efff"}
+                    url={'#tech-stack'}
                     />
                 <HeaderCard
-                    title={"Contacts"}
-                    lineColor={"#8f8f8f"}
+                    title={"Contact me"}
+                    lineColor={"#ef97efff"}
+                    url={'#contact'}
                     />
             </div>
             <div className={styles['your-name']}>

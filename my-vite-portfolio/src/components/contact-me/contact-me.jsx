@@ -28,11 +28,11 @@ export default function ContactMe() {
                         />
                     <SocialLinkRow 
                         title={'RESUME'}
-                        url={'https://instagram.com/danppelin'}
+                        url={'#'}
                         />
                     <SocialLinkRow 
                         title={'EMAIL'}
-                        url={'https://instagram.com/danppelin'}
+                        url={'mailto:danilocanabanopelinjr@gmail.com'}
                         />
                 </div>
             </div>

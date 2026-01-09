@@ -27,7 +27,7 @@
                 height: 10px;
                 background-color: #ef97efff;
             }
-        .about-me-main-p-centered {
+        .about-me-content {
             display: flex;
             flex: 0 1 auto;
             flex-direction: column;
@@ -36,18 +36,18 @@
             padding: 5% 25%;
 
         }
-            .about-me-main-p {
+            .about-me-text {
                 flex: 1;
                 display: inline;
-                font-size: 1.75em;
+                font-size: 2em;
                 letter-spacing: 2px;
             }
-                .about-me-main-p.p1 > #highlight {
+                .about-me-text.title > #highlight {
                     display: inline-block;
-                    font-size: 3.25em;
+                    font-size: 4.5rem;
                     color: #ed0d8cff;
                 }
-                .about-me-main-p.p2 {
+                .about-me-text.subtitle {
                     padding: 5% 0 0% 0;
                     font-size: 1em;
                     color: rgb(158, 158, 158);
@@ -55,6 +55,6 @@
                 .about-me-main-p > span {
                     display: inline-block;
                     cursor: pointer;
-                    font-size: 1.4em;
+                    font-size: 3rem;
                     color: #ed0d8cff;
                 }

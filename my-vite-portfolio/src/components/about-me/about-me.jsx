@@ -12,8 +12,8 @@ const AboutMe = ({ref}) => {
                 <hr/>
                 <p className={` ${styles['about-me-p']} ${styles.text} `}>About <br/>me</p>
             </div>
-            <div className={` ${styles['about-me-main-p-centered']} ${styles.text}`}>
-                <p className={`${styles['about-me-main-p']} ${styles.p1} ${styles.text}`}>
+            <div className={` ${styles['about-me-content']} ${styles.text}`}>
+                <p className={`${styles['about-me-text']} ${styles.title} ${styles.text}`}>
                     Hi! I'm <span id={styles['highlight']}>Danilo</span>,
                     a fullstack Engineer that focuses on creating <></>
                     <motion.span variants={scaleWords} initial="begin" whileHover='animated' transition='time'> lorem ipsum </motion.span>, <></> 
@@ -21,7 +21,7 @@ const AboutMe = ({ref}) => {
                     <motion.span variants={scaleWords} initial="begin" whileHover='animated' transition='time'> adipiscing </motion.span> websites.
                 </p> 
 
-                <p className={`${styles['about-me-main-p']} ${styles.p2} ${styles.text}`}>
+                <p className={`${styles['about-me-text']} ${styles.subtitle} ${styles.text}`}>
                     When I'm not working, you can find me strolling for new cafes in Espana, writing stories on Wattpad, or watching Heated Rivalry :)
                 </p>
             </div>

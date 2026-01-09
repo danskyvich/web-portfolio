@@ -9,7 +9,6 @@ const Banner = ({ref}) => {
        <p className={styles['banner-text']}id={styles.upper}>I'm a </p>
        <span id={styles.important}>Full-stack <br/>Engineer</span>
        <p className={styles['banner-text']}id={styles.lower}> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean mauris libero.</p>
-       <hr/>
     </motion.div>
 }
 

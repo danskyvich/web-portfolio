@@ -44,17 +44,17 @@
             }
                 .about-me-text.title > #highlight {
                     display: inline-block;
-                    font-size: 4.5rem;
+                    font-size: 3em;
                     color: #ed0d8cff;
                 }
                 .about-me-text.subtitle {
                     padding: 5% 0 0% 0;
-                    font-size: 1em;
+                    font-size: 1.5em;
                     color: rgb(158, 158, 158);
                 }
-                .about-me-main-p > span {
+                .about-me-text > span {
                     display: inline-block;
                     cursor: pointer;
-                    font-size: 3rem;
+                    font-size: 1.75em;
                     color: #ed0d8cff;
                 }

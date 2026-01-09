@@ -4,15 +4,15 @@
     flex: 0;
     width: 100%;
     height: fit-content;
-    padding: 2% 5%;
+    padding: 1% 5%;
     gap: 2%;
     align-items: center;
 }
     .header-container > img {
         display: flex;
         flex: 0 1 auto;
-        width: 5em;
-        height: 5em;
+        width: 3em;
+        height: 3em;
         border-radius: 10px;
     }
     .space {

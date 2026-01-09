@@ -4,7 +4,7 @@
     flex: 1 1 auto;
     flex-direction: column;
     height: fit-content;
-    width: 50%;
+    width: 100%;
     padding: 8% 5%;
 }
     .banner-text {
@@ -16,12 +16,14 @@
             line-height: 1.5;
             font-weight: 600;
             letter-spacing: 1.4px;
+            width: 50%;
+            font-size: 1.5em;
         }
 
         #important {
             display: inline-block;
             color: white;
-            font-size: 5.5em;
+            font-size: 7em;
             line-height: 0.85;
             font-weight: 700;
             padding: 2% 0;

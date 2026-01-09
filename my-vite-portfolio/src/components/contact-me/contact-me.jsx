@@ -26,6 +26,14 @@ export default function ContactMe() {
                         title={'INSTAGRAM'}
                         url={'https://instagram.com/danppelin'}
                         />
+                    <SocialLinkRow 
+                        title={'RESUME'}
+                        url={'https://instagram.com/danppelin'}
+                        />
+                    <SocialLinkRow 
+                        title={'EMAIL'}
+                        url={'https://instagram.com/danppelin'}
+                        />
                 </div>
             </div>
         </div>

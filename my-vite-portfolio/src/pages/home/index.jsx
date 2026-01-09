@@ -56,7 +56,7 @@ export default function Home() {
             <section className={` ${styles.contact} ${styles.container}`}>
                 <div className={styles['contact-me-header']}>
                     <hr/>
-                        <p id="contact" className={` ${styles.header}`}>Contact</p>
+                        <p id="contact" className={styles.header}>Contact</p>
                     </div>
                 <ContactMe/>
             </section>

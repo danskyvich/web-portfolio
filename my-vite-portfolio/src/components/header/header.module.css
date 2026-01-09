@@ -31,15 +31,3 @@
         font-weight: 800;
         cursor: pointer;
     }
-
-@media screen and (max-width: 480px) {
-   .header-container {
-        flex-direction: column;
-        flex: 0 1 auto;
-        width: 100vw;
-        height: fit-content;
-   }
-    .header-container > img {
-        align-self: center;
-    }
-}

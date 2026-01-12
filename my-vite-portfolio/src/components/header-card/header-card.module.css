@@ -11,21 +11,3 @@
         width: 100%;
         transform-origin: left;
     }
-
-@media (max-width: 600px) {
-    .header-card-container {
-        padding: 0% 6%;
-        background-color: rgb(235, 235, 235);
-    }
-}
-
-@media (max-width: 480px) {
-    .header-card-container {
-        flex: 0 1 auto;
-        box-sizing: border-box;
-        flex-wrap: wrap;
-        height: 3em;
-        margin: 0% 0;
-        width: 100%;
-    }
-}

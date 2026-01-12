@@ -1,21 +1,51 @@
 import styles from "./main-banner.module.css"
-import { motion } from 'motion/react'
+import { easeOut, motion } from 'motion/react'
+import RightToLeft from "../../assets/animations/right-to-left"
+import LeftToRight from "../../assets/animations/left-to-right"
 
 const Banner = ({ref}) => {
 
-    return <motion.div className={styles['self-pic-container']}
-        viewport={{ root: ref}}
-    >
-       <p className={styles['banner-text']}id={styles.upper}>I'm a </p>
-       <span id={styles.important}>FULLSTACK <br/><motion.span
-        initial={{ color: '#ffffff'}}
-        whileHover={{ color: '#ed0d8cff'}}
-        transition={{ transform: { duration: 0.05}}}
-       >
-        ENGINEER
-        </motion.span></span>
-       <p className={styles['banner-text']}id={styles.lower}> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean mauris libero.</p>
-    </motion.div>
+    return <div className={styles['banner-content-container']}>
+        <div className={` ${styles['banner-left']} ${styles['side']}`}>
+            <motion.p className={styles['banner-text']}
+                variants={ LeftToRight }
+                initial='initial'
+                whileInView='whileInView'
+                viewport='viewport'
+                transition={{ delay: 0.5, duration: 0.75, ease: easeOut }}
+            >
+                I'm a 
+                </motion.p>
+
+            <motion.span id={styles.important}
+                variants={ RightToLeft }
+                initial="initial"
+                whileInView="whileInView"
+                viewport='viewport'
+                transition={{ delay: 0.5, duration: 0.75, ease: easeOut }}
+            >FULLSTACK <br/>
+
+                <span id={styles['highlight']}>ENGINEER</span>
+            </motion.span>
+
+            <motion.p className={styles['banner-text']}
+                variants={ LeftToRight }
+                initial='initial'
+                whileInView='whileInView'
+                viewport='viewport'
+                transition={{ delay: 0.5, duration: 0.75, ease: easeOut }}
+            > Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean mauris libero.</motion.p>
+
+            <motion.a href="#featured-projects" className={styles['view-my-works-button']}
+                variants={ RightToLeft }
+                initial='initial'
+                whileInView='whileInView'
+                transition={{ delay: 0.25, duration: 1}}
+            >VIEW MY WORK</motion.a>
+        </div>
+
+        <div className={` ${styles['banner-right']} ${styles['side']}`}/>
+    </div>
 }
 
 export default Banner;

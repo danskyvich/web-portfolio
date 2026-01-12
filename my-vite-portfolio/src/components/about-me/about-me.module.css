@@ -1,60 +1,61 @@
 .about-me-container {
-    margin: 15% 0;
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
-    .about-me-header{
+    /*Header*/
+    .about-me-header {
+        display: flex;
+        flex-direction: row;
+        height: 30dvh;
+        margin-top: 4rem;
+    }
+        .about-me-header > hr {
+            border: none;
+            background-color: #ef97efff;
+            width: 60%;
+            height: 10px;
+        }
+        .about-me-section-header {
+            color: white;
+            font-size: 5rem;
+            font-weight: 700;
+            padding: 0 2rem;
+            line-height: 0.9;
+        }
+
+    /*Text*/
+    .text {
+        color: white;
+    }
+    .about-me-content {
         display: flex;
         flex: 1;
-        gap: 2%;
-        align-items: flex-start;
+        flex-direction: column;
+        padding: 0 30%;
+        height: 100%;
     }
-        .text {
-            flex: 0 1 auto;
-            color: white;
-            font-weight: 600;
+        .about-me-text {
+            font-size: 2rem;
         }
-        .about-me-p {
-            font-size: 4.5em;
-            width: 45%;
-            align-self: flex-end;
-            font-weight: 600;
-            line-height: 0.8em;
-        }
-            .about-me-header > hr {
-                width: 55%;
-                border: none;
-                height: 10px;
-                background-color: #ef97efff;
+            .about-me-text.title {
+                font-size: 3.5rem;
+                font-weight: 700;
             }
-        .about-me-content {
-            display: flex;
-            flex: 0 1 auto;
-            flex-direction: column;
-            box-sizing: border-box;
-            width: 100%;
-            padding: 5% 25%;
+                .about-me-text #highlight {
+                    font-size: 6rem;
+                    color: #ed0d8cff;
+                }
+                .about-me-text #colored {
+                    color: #ed0d8cff;
+                }
 
-        }
-            .about-me-text {
-                flex: 1;
-                display: inline;
-                font-size: 2em;
-                letter-spacing: 2px;
+            .about-me-text.subtitle {
+                font-size: 1.75rem;
+                font-weight: 700;
+                line-height: 1.5;
+                margin-top: 3rem;
+                color: rgb(176, 176, 176);
+                text-align: center;
             }
-                .about-me-text.title > #highlight {
-                    display: inline-block;
-                    font-size: 3em;
-                    color: #ed0d8cff;
-                }
-                .about-me-text.subtitle {
-                    padding: 5% 0 0% 0;
-                    font-size: 1.5em;
-                    color: rgb(158, 158, 158);
-                }
-                .about-me-text > span {
-                    display: inline-block;
-                    cursor: pointer;
-                    font-size: 1.75em;
-                    color: #ed0d8cff;
-                }
+            

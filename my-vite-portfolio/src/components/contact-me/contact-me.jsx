@@ -1,14 +1,35 @@
 import styles from './contact-me.module.css'
 import SocialLinkRow from './social-link-row/social-link-row'
+import { motion, easeOut } from 'motion/react'
+import LeftToRight from '../../assets/animations/left-to-right.jsx'
+import RightToLeft from '../../assets/animations/right-to-left.jsx'
 
 export default function ContactMe() {
     return <div className={styles['contact-me-container']}>
         <div className={styles['contact-me-main']}>
             <div style={{ display: 'flex', flex: '1', width: '45vw'}}/>
             <div className={styles['contact-me-text']}>
-                <p className={styles['header-text']}>NEED SOME HELP?</p>
-                <p className={styles['normal-text']}>Let's talk how we make it happen.</p>
-                <p className={`${styles['right-aligned-text']} ${styles['right-aligned-desc']}`}>I always love it when I create things that benefit others. All my socials are listed below, you can send me a message anytime!</p>
+                <motion.p className={styles['header-text']}
+                    variants={ LeftToRight }
+                    initial='initial'
+                    whileInView='whileInView'
+                    transition={{ duration: 0.75, ease: easeOut }}
+                >NEED SOME HELP?</motion.p>
+
+                <motion.p className={styles['normal-text']}
+                    variants={ RightToLeft }
+                    initial='initial'
+                    whileInView='whileInView'
+                    transition={{ duration: 0.75, ease: easeOut }}
+                >
+                    Let's talk how we make it happen.</motion.p>
+                <motion.p className={`${styles['right-aligned-text']} ${styles['right-aligned-desc']}`}
+                    variants={ RightToLeft }
+                    initial='initial'
+                    whileInView='whileInView'
+                    transition={{ duration: 0.75, ease: easeOut }}
+                >
+                    I always love it when I create things that benefit others. All my socials are listed below, you can send me a message anytime!</motion.p>
                 <div className={styles['social-links']} >
                     <SocialLinkRow 
                         title={'GITHUB'} 

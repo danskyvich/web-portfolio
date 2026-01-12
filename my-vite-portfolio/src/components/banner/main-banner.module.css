@@ -1,40 +1,70 @@
-*, *::before, *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+/* GENERAL */
+.side {
+    display: flex;
+    flex: 1;
+    width: 50dvw;
 }
 
-.self-pic-container {
+.banner-content-container {
     display: flex;
-    flex: 0 1 auto;
-    flex-direction: column;
-    height: fit-content;
+    flex: 1;
     width: 100%;
-    padding: 8% 5%;
+    height: 100%;
 }
-    .banner-text {
+    .banner-left.side {
+        flex-direction: column;
+        flex: 1;
+        width: 50%;
+        height: 90dvh;
+        position: relative;
+        padding: 7.5rem 0 10rem 5rem;
+    }
+        .banner-text {
+            flex: 0 1 auto;
+            color: white;
+            height: fit-content;
+            width: 40vw;
+            font-size: 1.5rem;
+            font-weight: 900;
+            padding: 0 2rem 0 0.45rem;
+        }
+            .banner-left.side > #important {
+                flex: 0 1 auto;
+                font-size: 9rem;
+                color: white;
+                font-weight: 700;
+                line-height: 0.9;
+                text-shadow: 5px 5px gray;
+            }
+            .banner-left #highlight {
+                flex: 1;
+                font-size: 9rem;
+                color: #ed0d8cff;
+                font-weight: 700;
+                text-shadow: 5px 5px rgb(130, 8, 77);
+            }
+
+        .view-my-works-button {
+            flex: 0 1 auto;
+            padding: 2rem;
+            background-color: transparent;
+            border: 2px solid white;
+            border-radius: 15px;
+            width: 92.5%;
+            height: fit-content;
+            margin: 6rem 5rem 0 0;
+            font-size: 1.25rem;
+            font-weight: 900;
+            text-align: center;
+        }
+            .view-my-works-button:hover {
+                background-color: #ed0d8cff;
+                border: 2px solid #ed0d8cff;
+                transition-duration: 0.5s;
+            }
+
+    .banner-right.side {
         display: flex;
         flex: 1;
-        color: white;
-        display: inline-block;
+        width: 50%;
     }
-        .banner-text#upper, .banner-text#lower {
-            flex: 1;
-            line-height: 1.5;
-            font-weight: 600;
-            letter-spacing: 1.4px;
-            width: 50%;
-            font-size: 1em;
-            padding: 0 0.25em;
-        }
-        #important {
-            flex: 1;
-            display: inline-block;
-            color: white;
-            font-size: 7em;
-            line-height: 0.85;
-            font-weight: 700;
-        }
-
-    
-    

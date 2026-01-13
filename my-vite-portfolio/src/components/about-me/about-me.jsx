@@ -36,14 +36,14 @@ const AboutMe = () => {
             >
                 <p className={`${styles['about-me-text']} ${styles.title} ${styles.text}`}>
                     Hi! I'm <span id={styles['highlight']}>Danilo</span>,
-                    a fullstack Engineer that focuses on creating <></>
-                    <motion.span variants={scaleWords} initial="begin" whileHover='animated' transition='time' id={styles.colored} > lorem ipsum </motion.span>, <></> 
-                    <motion.span variants={scaleWords} initial="begin" whileHover='animated' transition='time' id={styles.colored}> consectetur </motion.span>, and <></>
-                    <motion.span variants={scaleWords} initial="begin" whileHover='animated' transition='time' id={styles.colored}> adipiscing </motion.span> websites.
+                    a fullstack developer that focuses on creating <></>
+                    <motion.span variants={scaleWords} initial="begin" whileHover='animated' transition='time' id={styles.colored} > intuitive</motion.span>, <></> 
+                    <motion.span variants={scaleWords} initial="begin" whileHover='animated' transition='time' id={styles.colored}> user-friendly</motion.span>, and <></>
+                    <motion.span variants={scaleWords} initial="begin" whileHover='animated' transition='time' id={styles.colored}> responsive</motion.span> websites that has one goal -- to help people.
                 </p> 
 
                 <p className={`${styles['about-me-text']} ${styles.subtitle} ${styles.text}`}>
-                    When I'm not working, you can find me strolling for new cafes in Espana, writing stories on Wattpad, or watching Heated Rivalry :)
+                    When I'm not working, you can find me strolling for new coffee shops in Manila, taking on new personal projects, or watching Heated Rivalry :)
                 </p>
             </motion.div>
         </section>

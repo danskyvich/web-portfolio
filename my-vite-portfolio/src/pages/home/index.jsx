@@ -50,9 +50,19 @@ export default function Home() {
                 </motion.h1>
                 </div>
                 <div className={styles['projects-content']}>
-
+                    <ProjectItem
+                        img={'card-covers/tokuen-web.png'}
+                        alt={'tokuen-web-app-banner'}
+                        alignment={'flex-end'}
+                        textAlignment={'flex-end'}
+                        title={'TOKUEN WEB APPLICATION'}
+                        description={'The front-end interface of the TOKUEN web application for the startup Artiphix, utilizing frontend frameworks such as React + Vite, and scripting languages such as Typescript.'}
+                        liveUrl={'#'}
+                        githubUrl={'https://github.com/danskyvich/tokn-web'}
+                        timeSpan={'December 2025 - present'}
+                        techUsed={['REACT', 'TYPESCRIPT', 'NODEJS', 'TAILWINDCSS']} 
+                    />
                 </div>
-                <ProjectItem/>
             </section>
             <section className={` ${styles['tech-stack-container']} ${styles.container}`}>
                 {/* Header */}

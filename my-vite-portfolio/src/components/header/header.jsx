@@ -16,12 +16,6 @@ const Header = () => {
                 textColor={'#ef97efff'}
             />
             <HeaderCard
-                url={"#other-works"}
-                title={"Works"}
-                lineColor={'#ed0d8cff'}
-                textColor={'#ef97efff'}
-            />
-            <HeaderCard
                 url={"#tech-stack"}
                 title={"Tech stack"}
                 lineColor={'#ed0d8cff'}

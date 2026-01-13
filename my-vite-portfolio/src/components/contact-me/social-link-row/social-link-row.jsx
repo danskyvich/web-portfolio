@@ -5,11 +5,11 @@ const SocialLinkRow = ({title, url}) => {
     return <motion.div className={styles['social-link-item']}
         whileHover="hover"
         >
-        <a href={url} target="_blank" rel="noopener noreferrer">
+        <a href={url} className={styles['social-link']} target="_blank" rel="noopener noreferrer">
             <motion.span id={styles.arrow}
                 initial={{ opacity: 0 }}
                 variants={{
-                    hover: { opacity: 1}
+                    hover: { opacity: 1, color: '#ed0d8cff' }
                 }}
                 transition={{ duration: 0.05, ease: 'easeOut'}}
                 

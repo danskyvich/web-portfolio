@@ -21,7 +21,7 @@ export default function Footer() {
                 />
                 <HeaderCard
                     title={'Contacts'}
-                    url={'#contact-me'}
+                    url={'#contact'}
                     lineColor={'#ed0d8cff'}
                 />
                 <HeaderCard/>

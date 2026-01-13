@@ -25,7 +25,7 @@ const Banner = ({ref}) => {
                 transition={{ delay: 0.5, duration: 0.75, ease: easeOut }}
             >FULLSTACK <br/>
 
-                <span id={styles['highlight']}>ENGINEER</span>
+                <span id={styles['highlight']}>DEVELOPER</span>
             </motion.span>
 
             <motion.p className={styles['banner-text']}
@@ -34,7 +34,7 @@ const Banner = ({ref}) => {
                 whileInView='whileInView'
                 viewport='viewport'
                 transition={{ delay: 0.5, duration: 0.75, ease: easeOut }}
-            > Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean mauris libero.</motion.p>
+            > that visualizes, designs, and implements web applications as a means to solve real-world problems.</motion.p>
 
             <motion.a href="#featured-projects" className={styles['view-my-works-button']}
                 variants={ RightToLeft }

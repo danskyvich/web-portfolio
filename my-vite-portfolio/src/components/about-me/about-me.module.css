@@ -34,6 +34,7 @@
         flex-direction: column;
         padding: 0 30%;
         height: 100%;
+        text-align: center;
     }
         .about-me-text {
             font-size: 2rem;

@@ -7,7 +7,7 @@ const HeaderCard = ({url, title, lineColor, textColor}) => {
         whileHover="hover"
         className={styles['header-card-container']}
     >
-        <a className={styles['header-link']} style={{ color: textColor}}href={url}>
+        <a style={{ color: textColor}}href={url}>
             {title}
         </a>
         <motion.div

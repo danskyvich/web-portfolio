@@ -60,7 +60,7 @@
             .view-my-works-button:hover {
                 background-color: #ed0d8cff;
                 border: 2px solid #ed0d8cff;
-                transition-duration: 0.5s;
+                transition-duration: 0.25s;
             }
 
     .banner-right.side {

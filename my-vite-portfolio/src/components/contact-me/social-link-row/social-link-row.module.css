@@ -6,12 +6,19 @@
     align-items: end;
     line-height: 1.1;
 }
-    .social-link-item > a {
+    .social-link-item > .social-link {
         flex: 1;
         font-weight: 800;
         font-size: 4rem;
         cursor: pointer;
     }
-        a:link, a:visited, a:hover, a:active {
+        .social-link:link, .social-link:visited, .social-link:active {
             color: white;
+        }
+        .social-link:hover {
+            color: #ed0d8cff;
+            transform: scale(1.2);
+            transform-origin: center right;
+            transition-duration: 0.2s;
+            transition-timing-function: cubic-bezier();
         }

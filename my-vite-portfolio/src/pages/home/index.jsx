@@ -6,6 +6,7 @@ import AboutMe from '../../components/about-me/about-me.jsx';
 import StackColumn from '../../components/tech-stack/tech-stack.jsx';
 import ContactMe from "../../components/contact-me/contact-me.jsx";
 import ProjectItem from '../../components/project-item/project-item.jsx';
+import ScrollUp from "../../components/scroll-up/scroll-up.jsx";
 
 /* Animations */
 import { easeOut, motion } from 'motion/react'
@@ -15,52 +16,56 @@ import LineSpan from "../../assets/animations/line-span-1.jsx";
 import LineSpan2 from "../../assets/animations/line-span-2.jsx";
 import LineSpanVertical from "../../assets/animations/line-span-vertical.jsx";
 
-export default function Home() {
-
-    return <div id="canvas-bg" className={` ${styles['main-container']} ${styles.container}`}>
-        <hr className={` ${styles.central} ${styles.divider}`}/>
-        <hr className={`${styles['left']} ${styles.divider}`}/>
-        <hr className={`${styles['right']} ${styles.divider}`}/>
-            <section className={`${styles['header-container']} ${styles.container}`}>
-                <Header/>
-            </section>
-            <section className={`${styles['banner-container']} ${styles.container}`}>
-                <Banner/>
-            </section>
-            <section className={`${styles['about-me-container']} ${styles.container}`}>
-                <AboutMe/>
-            </section>
-            <section className={` ${styles['projects-container']} ${styles.container}`}>
-                <div className={styles['projects-header']}>
-                    <motion.hr
-                    variants={ LineSpan }
-                    initial='initial'
-                    whileInView='whileInView'
-                    transition={{ duration: 3}}
+const Home = () => {
+    return <div className={styles['parent-container']}>
+            <div className={` ${styles['main-container']} ${styles.container}`}>
+                <ScrollUp
+                    scrollPoint={1000}
                 />
-                <motion.h1 id="featured-projects" className={`${styles['projects-section-header']}`}
-                    variants={ RightToLeft }
-                    initial='initial'
-                    whileInView='whileInView'
-                    transition={{ duration: 0.75, ease: easeOut}}
-                >
-                    Projects
-                </motion.h1>
-                </div>
-                <div className={styles['projects-content']}>
-                    <ProjectItem
-                        img={'card-covers/hex-color.png'}
-                        alt={'hexadecimal->color converter banner'}
-                        alignment={'flex-end'}
-                        textAlignment={'flex-end'}
-                        title={'HEX TO COLOR CONVERTER'}
-                        description={'A local conversion website that converts hexadecimal values into its color equivalent (including a breakdown of input into three RGB sections). Primarily runs on HTML, CSS, and Javascript.'}
-                        liveUrl={'https://danskyvich.github.io/hexadecimal-to-color-converter/'}
-                        githubUrl={'https://github.com/danskyvich/hexadecimal-to-color-converter'}
-                        timeSpan={'June - December 2025'}
-                        techUsed={['HTML', 'CSS', 'JAVASCRIPT']} 
+
+                <hr className={` ${styles.central} ${styles.divider}`}/>
+                <hr className={`${styles['left']} ${styles.divider}`}/>
+                <hr className={`${styles['right']} ${styles.divider}`}/>
+                <section className={`${styles['header-container']} ${styles.container}`}>
+                    <Header/>
+                </section>
+                <section className={`${styles['banner-container']} ${styles.container}`}>
+                    <Banner/>
+                </section>
+                <section className={`${styles['about-me-container']} ${styles.container}`}>
+                    <AboutMe/>
+                </section>
+                <section className={` ${styles['projects-container']} ${styles.container}`}>
+                    <div className={styles['projects-header']}>
+                        <motion.hr
+                        variants={ LineSpan }
+                        initial='initial'
+                        whileInView='whileInView'
+                        transition={{ duration: 3}}
                     />
-                    <ProjectItem
+                    <motion.h1 id="featured-projects" className={`${styles['projects-section-header']}`}
+                        variants={ RightToLeft }
+                        initial='initial'
+                        whileInView='whileInView'
+                        transition={{ duration: 0.75, ease: easeOut}}
+                    >
+                        Projects
+                    </motion.h1>
+                    </div>
+                    <div className={styles['projects-content']}>
+                        <ProjectItem
+                            img={'card-covers/hex-color.png'}
+                            alt={'hexadecimal->color converter banner'}
+                            alignment={'flex-end'}
+                            textAlignment={'flex-end'}
+                            title={'HEX TO COLOR CONVERTER'}
+                            description={'A local conversion website that converts hexadecimal values into its color equivalent (including a breakdown of input into three RGB sections). Primarily runs on HTML, CSS, and Javascript.'}
+                            liveUrl={'https://danskyvich.github.io/hexadecimal-to-color-converter/'}
+                            githubUrl={'https://github.com/danskyvich/hexadecimal-to-color-converter'}
+                            timeSpan={'June - December 2025'}
+                            techUsed={['HTML', 'CSS', 'JAVASCRIPT']} 
+                        />
+                        <ProjectItem
                         img={'card-covers/tokuen-web.png'}
                         alt={'tokuen-web-app-banner'}
                         alignment={'flex-end'}
@@ -153,5 +158,8 @@ export default function Home() {
                 <ContactMe/>
             </section>
             <Footer/>
+        </div>
     </div>
 }
+
+export default Home;

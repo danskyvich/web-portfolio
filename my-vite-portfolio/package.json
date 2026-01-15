@@ -12,7 +12,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^7.1.0",
     "@vercel/analytics": "^1.6.1",
-    "motion": "^12.23.26",
+    "motion": "^12.26.2",
     "particles.js": "^2.0.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",

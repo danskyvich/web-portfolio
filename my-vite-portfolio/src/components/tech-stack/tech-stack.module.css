@@ -18,7 +18,8 @@
         margin: 0 1rem;
         justify-content: center;
         font-weight: 600;
-        height: fit-content;
+        min-height: fit-content;
+        max-height: 7.5rem;
         font-size: 1.75rem;
         border-radius: 10px;
         box-shadow: 4px 6px rgb(117, 5, 69);

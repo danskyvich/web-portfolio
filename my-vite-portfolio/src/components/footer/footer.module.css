@@ -7,7 +7,7 @@
     padding: 2rem 0;
     border-top: 2px solid rgba(239, 151, 239, 0.289); 
 }
-    .footer-left-side, .footer-right-side {
+    .footer-left, .footer-right {
         display: flex;
         flex: 1;
         flex-direction: column;
@@ -32,7 +32,6 @@
 
         /* RIGHT*/
         .footer-right-text {
-            display: flex;
             flex: 1;
             justify-self: flex-end;
             color: white;
@@ -50,3 +49,94 @@
     .side {
         width: 50dvw;
     }
+@media only screen and (min-width: 769px) {
+    .footer-right-text.motto {
+        align-self: flex-end;
+    }
+    .footer-right-text.name {
+        text-align: end;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    .footer-links {
+        flex-direction: column;
+        gap: 10px;
+        font-size: 1rem;;
+    }
+    .footer-right-text {
+        text-align: end;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 600px) {
+    .footer-container, .footer-links {
+        flex-direction: column;
+        padding: 1rem 0;
+    }
+        .footer-left, .footer-right {
+            flex-direction: column;
+            width: 100vw;
+            margin: 1rem 0 0 0;
+            padding: 0;
+            align-items: center;
+        }
+        .footer-links {
+            margin-left: 0;
+            font-size: 1.2rem;
+            text-align: center;
+            gap: 1rem;
+            width: 100%;
+            padding: 1rem 0;;
+        }
+        .footer-left-text {
+            margin: 0;
+            padding: 0;
+            font-size: 1rem;
+            text-align: end;
+        }
+            .footer-right-text.name {
+                padding: 0;
+                font-size: 1.5rem;
+            }
+            .footer-right-text.motto {
+                font-size: 1.25rem;
+                padding: 0 0 1rem 0;
+            }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .footer-container, .footer-links {
+        flex-direction: column;
+        padding: 1rem 0;
+    }
+        .footer-left, .footer-right {
+            flex-direction: column;
+            width: 100vw;
+            margin: 0;
+            padding: 0;
+            align-items: center;
+        }
+        .footer-links {
+            margin-left: 0;
+            font-size: 0.75rem;
+            text-align: center;
+            gap: 0.1rem;
+            width: 100%;
+            padding: 1rem 0;;
+        }
+        .footer-left-text {
+            margin: 0;
+            padding: 0;
+            font-size: 0.75rem;
+            text-align: end;
+        }
+            .footer-right-text.name {
+                padding: 0;
+                font-size: 1rem;
+            }
+            .footer-right-text.motto {
+                font-size: 0.5rem;
+                padding: 0;
+            }
+}

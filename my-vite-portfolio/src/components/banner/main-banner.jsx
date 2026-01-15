@@ -6,8 +6,7 @@ import LeftToRight from "../../assets/animations/left-to-right"
 const Banner = ({ref}) => {
 
     return <div className={styles['banner-content-container']}>
-        <div className={` ${styles['banner-left']} ${styles['side']}`}>
-            <motion.p className={styles['banner-text']}
+        <motion.p className={styles['banner-text']}
                 variants={ LeftToRight }
                 initial='initial'
                 whileInView='whileInView'
@@ -17,17 +16,22 @@ const Banner = ({ref}) => {
                 I'm a 
                 </motion.p>
 
-            <motion.span id={styles.important}
-                variants={ RightToLeft }
+            <motion.p id={styles.important}
+                variants={ LeftToRight }
                 initial="initial"
                 whileInView="whileInView"
                 viewport='viewport'
                 transition={{ delay: 0.5, duration: 0.75, ease: easeOut }}
-            >FULLSTACK <br/>
-
-                <span id={styles['highlight']}>DEVELOPER</span>
-            </motion.span>
-
+            >FRONT-END <br/>
+            </motion.p>
+            <motion.p id={styles['highlight']}
+                variants={ LeftToRight }
+                initial="initial"
+                whileInView="whileInView"
+                viewport='viewport'
+                transition={{ delay: 0.5, duration: 0.75, ease: easeOut }}
+            >DEVELOPER</motion.p>
+        
             <motion.p className={styles['banner-text']}
                 variants={ LeftToRight }
                 initial='initial'
@@ -43,9 +47,6 @@ const Banner = ({ref}) => {
                 transition={{ delay: 0.25, duration: 1}}
             >VIEW MY WORK</motion.a>
         </div>
-
-        <div className={` ${styles['banner-right']} ${styles['side']}`}/>
-    </div>
 }
 
 export default Banner;

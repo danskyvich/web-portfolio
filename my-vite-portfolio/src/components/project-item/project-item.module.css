@@ -58,6 +58,7 @@
     flex: 1;
     flex-direction: column;
     padding: 5rem;
+    width: 50dvw;
 }
     .project-item-text > .item-title {
         flex: 1;
@@ -65,12 +66,14 @@
         font-weight: 800;
         font-size: 2rem;
         margin: 1rem 0 0 0;
+        width: 100%;
     }
     .project-item-text > .item-timespan {
         flex: 1;
         color: gray;
         font-size: 1.1rem;
         font-style: italic;
+        width: 100%;
     }
     .project-item-text > .item-description {
         flex: 1;
@@ -79,6 +82,7 @@
         font-weight: 500;
         margin: 1rem 0 2rem 0;
         line-height: 1.5;
+        width: 100%;
     }
 
     .item-tech-used {
@@ -92,3 +96,84 @@
         background-color: #ef97efff;
         opacity: 0.1;
     }
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+   .project-item-row {
+    flex-direction: column;
+   }
+    .projects-content {
+        flex-direction: column;
+        width: 100%;
+    }
+        .project-item-image.side {
+            width: 100%;
+            padding: 3rem 3rem 0 3rem;;
+        }
+        .project-item-text {
+            width: 100%;
+            padding: 0 3rem 10rem 3rem;
+            
+        }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 600px) {
+    .project-item-row {
+        flex-direction: column;
+    }
+        .projects-content {
+            flex-direction: column;
+            width: 100%;
+        }
+        .project-item-image.side {
+            width: 100%;
+            padding: 5rem 3rem 1rem 3rem;
+        }
+        .project-item-text {
+            width: 100%;
+            padding: 0 3rem 5rem 3rem;;
+        }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+
+    .project-item-row {
+        flex-direction: column;
+    }
+        .project-item-image.side, .project-item-text {
+            width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        .project-item-image.side .item-image {
+            height: auto;
+            width: 85%;
+            align-self: center;
+        }
+        .item-links-container {
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+        }
+            .item-button {
+                font-size: 0.8rem;
+                padding: 0.8rem;
+            }
+        .project-item-text {
+            padding: 0rem 4rem;
+        }
+            .project-item-text .item-title {
+                font-size: 1.2rem;
+            }
+            .project-item-text .item-timespan {
+                font-size: 1rem;
+                margin: 0.5rem 0;
+            }
+            .project-item-text .item-description {
+                font-size: 1rem;
+                margin: 0;
+            }
+            .project-item-text .item-tech-used{
+                font-size: 4rem;
+                margin-bottom: 7.5rem;;
+            }
+}

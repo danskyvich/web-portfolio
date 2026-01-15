@@ -36,7 +36,7 @@ const AboutMe = () => {
             >
                 <p className={`${styles['about-me-text']} ${styles.title} ${styles.text}`}>
                     Hi! I'm <span id={styles['highlight']}>Danilo</span>,
-                    a fullstack developer that focuses on creating <></>
+                    a front-end developer that focuses on creating <></>
                     <motion.span variants={scaleWords} initial="begin" whileHover='animated' transition='time' id={styles.colored} > intuitive</motion.span>, <></> 
                     <motion.span variants={scaleWords} initial="begin" whileHover='animated' transition='time' id={styles.colored}> user-friendly</motion.span>, and <></>
                     <motion.span variants={scaleWords} initial="begin" whileHover='animated' transition='time' id={styles.colored}> responsive</motion.span> websites that has one goal -- to help people.

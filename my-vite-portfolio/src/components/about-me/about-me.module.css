@@ -59,4 +59,68 @@
                 color: rgb(176, 176, 176);
                 text-align: center;
             }
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    .about-me-content {
+        padding: 2.5rem;;
+    }
+        .about-me-text.title {
+            font-size: 2.25rem;
+        }
+        .about-me-text.subtitle {
+            font-size: 2rem;
+        }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 600px) {
+    .about-me-content {
+        padding: 5rem 5rem 7.5rem 5rem;
+    }
+    .about-me-text.title {
+        font-size: 1.5rem;
+        justify-content: flex-end;
+    }
+    .about-me-text #highlight {
+        font-size: 3rem;
+    }
+        
+    .about-me-text.subtitle {
+        font-size: 1.5rem;
+        padding: 0.8rem;
+        margin: 0;
+    }
+    .about-me-header {
+        padding: 0;
+        height: 10rem;
+    }
+        .about-me-section-header {
+            font-size: 3rem;
+        }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px)  {
+    .about-me-content {
+        padding: 1.3rem;
+    }
+    .about-me-header {
+        height: 5%;
+    }
+    .about-me-section-header {
+        font-size: 1.5rem;
+        margin-bottom: 3rem
+    }
+        .about-me-text.title {
+            font-size: 1rem;
+            justify-content: flex-end;
+        }
+            .about-me-text #highlight {
+            font-size: 2rem;
+            }
+        
+        .about-me-text.subtitle {
+            font-size: 0.8rem;
+            padding: 0.8rem;
+            margin: 0;
+        }
+}
             

@@ -7,7 +7,6 @@ import RightToLeft from '../../assets/animations/right-to-left.jsx'
 export default function ContactMe() {
     return <div className={styles['contact-me-container']}>
         <div className={styles['contact-me-main']}>
-            <div style={{ display: 'flex', flex: '1', width: '45vw'}}/>
             <div className={styles['contact-me-text']}>
                 <motion.p className={styles['header-text']}
                     variants={ LeftToRight }
@@ -30,7 +29,9 @@ export default function ContactMe() {
                     transition={{ duration: 0.75, ease: easeOut }}
                 >
                     I always love it when I create things that benefit others. All my socials are listed below, you can send me a message anytime!</motion.p>
-                <div className={styles['social-links']} >
+            </div>
+        </div>
+        <div className={styles['social-links']} >
                     <SocialLinkRow 
                         title={'GITHUB'} 
                         url={'https://github.com/danskyvich'}
@@ -56,7 +57,5 @@ export default function ContactMe() {
                         url={'mailto:danilocanabanopelinjr@gmail.com'}
                         />
                 </div>
-            </div>
-        </div>
     </div>
 }

@@ -1,11 +1,6 @@
-/* GENERAL */
-*, *::before, *::after {
-    box-sizing: border-box;
-}
+
 .container {
-    display: flex;
-    flex: 0 1 auto;
-    height: 100dvh;
+    height: 100%;
 }
 
 .divider {
@@ -31,9 +26,8 @@
 }
 
 /* Parent container*/
-.main-container {
+.main-container{
     display: flex;
-    flex: 1;
     flex-direction: column;
     background-color: rgb(3, 3, 54);
 }
@@ -41,17 +35,17 @@
     .header-container {
         display: flex;
         flex: 1;
-        height: 10dvh;
+        height: fit-content;
     }
     .banner-container {
         display: flex;
         flex: 1;
-        height: 90dvh;
+        height: fit-content;
     }
     .about-me-container {
         display: flex;
         flex: 1;
-        height: 120dvh;
+        height: fit-content;
         margin-bottom: 25rem;
     }
 
@@ -62,7 +56,6 @@
         height: fit-content;
         background-color: rgb(0, 2, 41);
         padding: 10rem 0 3rem 0;
-        overflow-x: hidden ;
     }
         .projects-header {
             display: flex;
@@ -72,14 +65,14 @@
             margin-bottom: 5rem;
         }
             .projects-section-header {
-            flex: 0 1 auto;
+            flex: 1;
             color: white;
             font-size: 5rem;
-            width: 40%;
             margin-left: 2rem;
+            
             }
             .projects-header > hr {
-            flex: 1;
+            flex: 0 1 auto;
             border: none;
             width: 60%;
             height: 10px;
@@ -98,7 +91,7 @@
         display: flex;
         flex: 0 1 auto;
         flex-direction: column;
-        height: 120dvh;
+        height: fit-content;
     }
         /* section header*/
         .tech-stack-header {
@@ -138,7 +131,6 @@
                 flex: 1;
                 padding: 2rem 5rem 25rem 5rem;
                 height: 100%;
-                width: 100;
             }
                 .tech-stack-columns > hr {
                     height: 100%;
@@ -150,6 +142,7 @@
         display: flex;
         flex: 1;
         flex-direction: column;
+        height: fit-content;
     }
         .contact-me-section-header {
             display: flex;
@@ -167,4 +160,88 @@
                 .contact-me-header {
                     padding: 0 2rem;
                 }
-    
+
+@media only screen and (min-width: 769px) {
+    .projects-section-header {
+        padding: 0 3rem 0 0;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    .tech-stack-columns {
+        flex-direction: column;
+    }
+        .tech-stack-header-text {
+            font-size: 4rem;;
+        }
+
+    .banner-container {
+        margin-bottom: 5rem;;
+    }
+
+    .contact-me-section-header {
+        font-size: 4rem;;
+    }
+}
+@media only screen and (min-width: 481px) and (max-width: 600px) {
+
+    .tech-stack-columns {
+        flex-direction: column;
+        padding: 2rem 2rem 10rem 2rem;
+    }
+        .tech-stack-header-text {
+            font-size: 3rem;
+        }
+
+    .projects-section-header {
+        padding: 0 2rem 0 0;
+        font-size: 3rem;;
+    }
+
+    .about-me-container {
+        margin: 6rem 0;
+    }
+
+    .contact-me-header {
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+
+    .main-container {
+        width: 100vw;
+    }
+
+    .tech-stack-container {
+        margin: 0 0 10rem 0;
+    }
+        .tech-stack-header-text {
+            font-size: 1.5rem;;
+            margin: 0 1rem;
+            width: 30%;
+        }
+            .tech-stack-columns {
+                flex-direction: column;
+                padding: 0 2rem;
+            }
+
+    .projects-container {
+        flex-direction: column;
+        margin: 0;
+    }
+        .projects-section-header {
+            font-size: 2rem;
+            padding: 0;
+        }
+
+    .contact-me-section-header {
+        font-size: 2rem;;
+    }
+
+    .about-me-container {
+        padding: 0;
+        margin: 0 0 5rem 0;
+    }
+     
+}

@@ -17,9 +17,7 @@ import LineSpanVertical from "../../assets/animations/line-span-vertical.jsx";
 
 export default function Home() {
 
-
-    
-    return <div id="canvas-bg" className={` ${styles['main-container']}`}>
+    return <div id="canvas-bg" className={` ${styles['main-container']} ${styles.container}`}>
         <hr className={` ${styles.central} ${styles.divider}`}/>
         <hr className={`${styles['left']} ${styles.divider}`}/>
         <hr className={`${styles['right']} ${styles.divider}`}/>
@@ -50,6 +48,18 @@ export default function Home() {
                 </motion.h1>
                 </div>
                 <div className={styles['projects-content']}>
+                    <ProjectItem
+                        img={'card-covers/hex-color.png'}
+                        alt={'hexadecimal->color converter banner'}
+                        alignment={'flex-end'}
+                        textAlignment={'flex-end'}
+                        title={'HEX TO COLOR CONVERTER'}
+                        description={'A local conversion website that converts hexadecimal values into its color equivalent (including a breakdown of input into three RGB sections). Primarily runs on HTML, CSS, and Javascript.'}
+                        liveUrl={'https://danskyvich.github.io/hexadecimal-to-color-converter/'}
+                        githubUrl={'https://github.com/danskyvich/hexadecimal-to-color-converter'}
+                        timeSpan={'June - December 2025'}
+                        techUsed={['HTML', 'CSS', 'JAVASCRIPT']} 
+                    />
                     <ProjectItem
                         img={'card-covers/tokuen-web.png'}
                         alt={'tokuen-web-app-banner'}

@@ -10,10 +10,13 @@
     background-color: #ef97efff;
     height: 100%;
     width: 2px;
-    opacity: 0.25
+    opacity: 0.25;
+    z-index: 0s;
+    
 }
     .central.divider {
         transform: translateX(50dvw);
+        z-index: 0;
     }
     .left.divider {
         transform: translateX(3.5dvw);

@@ -9,7 +9,7 @@ import ProjectItem from '../../components/project-item/project-item.jsx';
 import ScrollUp from "../../components/scroll-up/scroll-up.jsx";
 
 /* Animations */
-import { easeOut } from 'motion/react'
+import { easeOut, motion } from 'motion/react'
 import RightToLeft from "../../assets/animations/right-to-left.jsx";
 import LeftToRight from "../../assets/animations/left-to-right.jsx";
 import LineSpan from "../../assets/animations/line-span-1.jsx";

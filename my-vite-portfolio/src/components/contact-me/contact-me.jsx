@@ -50,11 +50,11 @@ export default function ContactMe() {
                         />
                     <SocialLinkRow 
                         title={'RESUME'}
-                        url={'https://1drv.ms/b/c/874658c9069a79d0/IQAFKY13emi5RJ_dmPyXqO40AUF7tdILbjE_8gYN0dMjhsM?e=mCZ7sq'}
+                        url={'https://1drv.ms/b/c/874658c9069a79d0/IQA0Nicd0cwvTKgWK9pdSNIrAd5l6SV2saf0MbTBNl503_8?e=v79FcK'}
                         />
                     <SocialLinkRow 
                         title={'EMAIL'}
-                        url={'mailto:danilocanabanopelinjr@gmail.com'}
+                        url={'mailto:danilopelinjr@gmail.com'}
                         />
                 </div>
     </div>

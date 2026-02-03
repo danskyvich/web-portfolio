@@ -50,7 +50,7 @@ export default function ContactMe() {
                         />
                     <SocialLinkRow 
                         title={'RESUME'}
-                        url={'https://1drv.ms/b/c/874658c9069a79d0/IQA0Nicd0cwvTKgWK9pdSNIrAd5l6SV2saf0MbTBNl503_8?e=v79FcK'}
+                        url={'https://drive.google.com/file/d/1LCOaUFPNnHgzXRAuOhzf6nR0lpb1Co-w/view?usp=sharing'}
                         />
                     <SocialLinkRow 
                         title={'EMAIL'}

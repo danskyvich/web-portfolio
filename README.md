@@ -8,9 +8,11 @@ I'm planning to deploy this website to Vercel after I verify and validate my por
 
 # ✍️ Things to implement
 - [x] Scroll up button (bottom-right)
-- [ ] Mobile topbar using media queries
-- [ ] Possible UI overhaul of the `tech-stack` section
-- [ ] Drop-down element of a 3D object (using Three.js)
-- [ ] Animated background
+- [x] Mobile topbar using media queries
+- [x] Possible UI overhaul of the `tech-stack` section
+- [x] Drop-down element of a 3D object (using Three.js)
+- [x] Animated background
 ## Possibility
 I might create a new portfolio in the near future after my first internship is done, implementing current + Typescript, TailwindCSS, and future frameworks if necessary.
+## Update:
+This repository is archived and is read-only. 
